@@ -1,6 +1,6 @@
 package problems
 
-import problems.Problem1.sumOfMultiples
+import problems.Problem1.*
 
 
 class Problem1Suite extends munit.FunSuite {
@@ -29,5 +29,32 @@ class Problem1Suite extends munit.FunSuite {
     assertEquals(sumOfMultiples(1000), 233168)
   }
 
+  //  Recursion
+  test("0, 1, 2, 3") {
+    assertEquals(sumOfMultiplesByRecursion(0), 0)
+    assertEquals(sumOfMultiplesByRecursion(1), 0)
+    assertEquals(sumOfMultiplesByRecursion(2), 0)
+    assertEquals(sumOfMultiplesByRecursion(3), 0)
+  }
+
+  test("4") {
+    assertEquals(sumOfMultiplesByRecursion(4), 3)
+  }
+
+  test("5") {
+    assertEquals(sumOfMultiplesByRecursion(5), 3)
+  }
+
+  test("6") {
+    assertEquals(sumOfMultiplesByRecursion(6), 8)
+  }
+
+  test("10") {
+    assertEquals(sumOfMultiplesByRecursion(10), 23)
+  }
+
+  test("1000") {
+    assertEquals(sumOfMultiplesByRecursion(1000), 233168)
+  }
 
 }
