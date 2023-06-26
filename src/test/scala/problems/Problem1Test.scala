@@ -3,7 +3,7 @@ package problems
 import problems.Problem1.*
 
 
-class Problem1Suite extends munit.FunSuite {
+class Problem1Test extends munit.FunSuite {
 
   test("0, 1, 2, 3") {
     assertEquals(sumOfMultiples(0), 0)
