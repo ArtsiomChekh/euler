@@ -23,5 +23,7 @@ object Problem1 {
 
     loop(n - 1, 0)
 
+  def sumOfMultiplesBelowWithoutLoopAndRecursion(n: Int): Int = ???
 
 }
+
