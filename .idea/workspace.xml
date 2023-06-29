@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9651a77e-8e53-4fba-a0e7-bb24d6cc4692" name="Changes" comment="Scala 3.3">
-      <change beforePath="$PROJECT_DIR$/.bsp/sbt.json" beforeDir="false" afterPath="$PROJECT_DIR$/.bsp/sbt.json" afterDir="false" />
+    <list default="true" id="9651a77e-8e53-4fba-a0e7-bb24d6cc4692" name="Changes" comment="Links and Class names">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/Problem1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P1_MultiplesOf3Or5.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/Problem2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P2_EvenFibonacciNumbers.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/Problem3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P3_LargestPrimeFactor.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/Problem4.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P4_LargestPalindromeProduct.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/problems/Problem1Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/problems/P1_MultiplesOf3Or5Test.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/problems/Problem2Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/problems/P2_EvenFibonacciNumbersTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/problems/Problem3Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/problems/P3_LargestPrimeFactorTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/problems/Problem4Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/problems/P4_LargestPalindromeProductTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/P3_LargestPrimeFactor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P3_LargestPrimeFactor.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +73,7 @@
       <recent name="problems" />
     </key>
   </component>
-  <component name="RunManager" selected="MUnit.P1_MultiplesOf3Or5Test">
+  <component name="RunManager" selected="MUnit.P3_LargestPrimeFactorTest">
     <configuration name="P1MultiplesOf3Or5Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="euler" />
       <option name="VMParameters" value="" />
@@ -160,7 +152,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem2Test.89 (2, 8, 34)" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="P3_LargestPrimeFactorTest" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="euler" />
       <option name="VMParameters" value="" />
       <option name="allowRunningInParallel" value="false" />
@@ -178,10 +170,9 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="testKind" value="Test name" />
+      <option name="testKind" value="Class" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <option name="testClassPath" value="problems.Problem2Test" />
-      <option name="testName" value="89 (2, 8, 34)" />
+      <option name="testClassPath" value="problems.P3_LargestPrimeFactorTest" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -215,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="MUnit.P3_LargestPrimeFactorTest" />
         <item itemvalue="MUnit.P1_MultiplesOf3Or5Test" />
         <item itemvalue="MUnit.P2_EvenFibonacciNumbersTest" />
         <item itemvalue="MUnit.P1MultiplesOf3Or5Test" />
         <item itemvalue="MUnit.Problem4Test" />
-        <item itemvalue="MUnit.Problem2Test.89 (2, 8, 34)" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688044030286</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Links and Class names">
+      <option name="closed" value="true" />
+      <created>1688045516902</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688045516902</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -310,6 +309,7 @@
     <MESSAGE value="Problem3" />
     <MESSAGE value="Problem4" />
     <MESSAGE value="Scala 3.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scala 3.3" />
+    <MESSAGE value="Links and Class names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Links and Class names" />
   </component>
 </project>

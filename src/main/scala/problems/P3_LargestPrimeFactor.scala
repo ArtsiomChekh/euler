@@ -11,9 +11,8 @@ object P3_LargestPrimeFactor:
     var divider = 2
     var num = n
     while (num > 1)
-      if num % divider == 0 then
-        if largest < divider then
-          largest = divider
+      if num % divider == 0 && largest < divider then
+        largest = divider
         num /= divider
       else
         divider += 1
