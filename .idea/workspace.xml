@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9651a77e-8e53-4fba-a0e7-bb24d6cc4692" name="Changes" comment="Problem4">
+    <list default="true" id="9651a77e-8e53-4fba-a0e7-bb24d6cc4692" name="Changes" comment="Scala 3.3">
+      <change beforePath="$PROJECT_DIR$/.bsp/sbt.json" beforeDir="false" afterPath="$PROJECT_DIR$/.bsp/sbt.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/Problem2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/Problem2.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/Problem1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P1_MultiplesOf3Or5.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/Problem2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P2_EvenFibonacciNumbers.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/Problem3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P3_LargestPrimeFactor.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/Problem4.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P4_LargestPalindromeProduct.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/problems/Problem1Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/problems/P1_MultiplesOf3Or5Test.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/problems/Problem2Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/problems/P2_EvenFibonacciNumbersTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/problems/Problem3Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/problems/P3_LargestPrimeFactorTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/problems/Problem4Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/problems/P4_LargestPalindromeProductTest.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +81,8 @@
       <recent name="problems" />
     </key>
   </component>
-  <component name="RunManager" selected="MUnit.Problem4Test">
-    <configuration name="Problem2Test.8 (2, 8)" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+  <component name="RunManager" selected="MUnit.P1_MultiplesOf3Or5Test">
+    <configuration name="P1MultiplesOf3Or5Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="euler" />
       <option name="VMParameters" value="" />
       <option name="allowRunningInParallel" value="false" />
@@ -93,10 +100,61 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="testKind" value="Test name" />
+      <option name="testKind" value="Class" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <option name="testClassPath" value="problems.Problem2Test" />
-      <option name="testName" value="8 (2, 8)" />
+      <option name="testClassPath" value="problems.P1MultiplesOf3Or5Test" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P1_MultiplesOf3Or5Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="euler" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="testClassPath" value="problems.P1_MultiplesOf3Or5Test" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P2_EvenFibonacciNumbersTest" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="euler" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="testClassPath" value="problems.P2_EvenFibonacciNumbersTest" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,67 +213,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem4Test.123 is palindrome" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="euler" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <option name="testClassPath" value="problems.Problem4Test" />
-      <option name="testName" value="123 is palindrome" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Problem4Test.largest Palindrome" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="euler" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <option name="testClassPath" value="problems.Problem4Test" />
-      <option name="testName" value="largest Palindrome" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="MUnit.P1_MultiplesOf3Or5Test" />
+        <item itemvalue="MUnit.P2_EvenFibonacciNumbersTest" />
+        <item itemvalue="MUnit.P1MultiplesOf3Or5Test" />
         <item itemvalue="MUnit.Problem4Test" />
         <item itemvalue="MUnit.Problem2Test.89 (2, 8, 34)" />
-        <item itemvalue="MUnit.Problem2Test.8 (2, 8)" />
-        <item itemvalue="MUnit.Problem4Test.largest Palindrome" />
-        <item itemvalue="MUnit.Problem4Test.123 is palindrome" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688026337253</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Scala 3.3">
+      <option name="closed" value="true" />
+      <created>1688044030286</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688044030286</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -297,6 +309,7 @@
     <MESSAGE value="Problem1 update recursion" />
     <MESSAGE value="Problem3" />
     <MESSAGE value="Problem4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Problem4" />
+    <MESSAGE value="Scala 3.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scala 3.3" />
   </component>
 </project>

@@ -3,16 +3,15 @@ package problems
 import scala.main
 
 /*
- *  Even Fibonacci Numbers
+ * Even Fibonacci Numbers
+ * https://projecteuler.net/problem=2
  */
 
-object Problem2 {
-
-  @main def run(): Unit = {
+object P2_EvenFibonacciNumbers:
+  @main def run(): Unit =
     println(sumOfEvenValued(4000000))
-  }
 
-  def sumOfEvenValued(x: Int): Int = {
+  def sumOfEvenValued(x: Int): Int =
     var sum = 0
     var e = 1
 
@@ -28,6 +27,5 @@ object Problem2 {
         sum += fibonacci(e)
       e = e + 1
     sum
-  }
+end P2_EvenFibonacciNumbers
 
-}

@@ -1,11 +1,11 @@
 package problems
 
 /*
-* Largest Prime Factor
-*/
+ * Largest Prime Factor
+ * https://projecteuler.net/problem=3
+ */
 
-object Problem3 {
-
+object P3_LargestPrimeFactor:
   def largestPrimeFactor(n: Long): Int =
     var largest = 0
     var divider = 2
@@ -18,5 +18,5 @@ object Problem3 {
       else
         divider += 1
     largest
+end P3_LargestPrimeFactor
 
-}
