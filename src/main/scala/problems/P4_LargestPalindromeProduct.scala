@@ -4,7 +4,6 @@ package problems
  * Largest Palindrome Product
  * https://projecteuler.net/problem=4
  */
-
 object P4_LargestPalindromeProduct:
   def isPalindrome(n: Int): Boolean =
     var num = n

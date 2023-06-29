@@ -4,7 +4,6 @@ package problems
  * Multiples of 3 or 5
  * https://projecteuler.net/problem=1
  */
-
 object P1_MultiplesOf3Or5:
   def sumOfMultiplesBelow(x: Int): Int =
     var res = 0
@@ -22,6 +21,7 @@ object P1_MultiplesOf3Or5:
         loop(k - 1, sum + k)
       else
         loop(k - 1, sum)
+
     loop(n - 1, 0)
 
   def sumOfMultiplesBelowWithoutLoopAndRecursion(n: Int): Int = ???

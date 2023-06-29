@@ -4,7 +4,6 @@ package problems
  * Largest Prime Factor
  * https://projecteuler.net/problem=3
  */
-
 object P3_LargestPrimeFactor:
   def largestPrimeFactor(n: Long): Int =
     var largest = 0

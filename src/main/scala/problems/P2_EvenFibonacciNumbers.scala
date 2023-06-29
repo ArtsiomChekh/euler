@@ -6,7 +6,6 @@ import scala.main
  * Even Fibonacci Numbers
  * https://projecteuler.net/problem=2
  */
-
 object P2_EvenFibonacciNumbers:
   @main def run(): Unit =
     println(sumOfEvenValued(4000000))
