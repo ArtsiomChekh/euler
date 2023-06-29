@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9651a77e-8e53-4fba-a0e7-bb24d6cc4692" name="Changes" comment="Problem1 update recursion">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/problems/Problem3.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/problems/Problem3Test.scala" afterDir="false" />
+    <list default="true" id="9651a77e-8e53-4fba-a0e7-bb24d6cc4692" name="Changes" comment="Problem3">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/problems/Problem4.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/problems/Problem4Test.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/Problem1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/Problem1.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,20 +52,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;MUnit&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.MUnit&quot;: &quot;munit.FunSuite&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/artsiomchekh/Downloads/Idea projects/euler&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "MUnit",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.MUnit": "munit.FunSuite",
+    "last_opened_file_path": "/Users/artsiomchekh/Downloads/IdeaProjects/euler",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="munit.FunSuite" />
@@ -75,20 +74,7 @@
       <recent name="problems" />
     </key>
   </component>
-  <component name="RunManager" selected="MUnit.Problem3Test">
-    <configuration name="run" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="problems.run" />
-      <module name="euler" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="MUnit.Problem4Test">
     <configuration name="Problem1Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="euler" />
       <option name="VMParameters" value="" />
@@ -110,59 +96,6 @@
       <option name="testKind" value="Class" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
       <option name="testClassPath" value="problems.Problem1Test" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Problem2Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="euler" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Class" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <option name="testClassPath" value="problems.Problem2Test" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Problem2Test.0" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="euler" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <option name="testClassPath" value="problems.Problem2Test" />
-      <option name="testName" value="0" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -194,13 +127,93 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Problem4Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="euler" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="testClassPath" value="problems.Problem4Test" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Problem4Test.123 is palindrome" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="euler" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="testClassPath" value="problems.Problem4Test" />
+      <option name="testName" value="123 is palindrome" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Problem4Test.largest Palindrome" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="euler" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="testClassPath" value="problems.Problem4Test" />
+      <option name="testName" value="largest Palindrome" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="MUnit.Problem4Test" />
+        <item itemvalue="MUnit.Problem4Test.largest Palindrome" />
+        <item itemvalue="MUnit.Problem4Test.123 is palindrome" />
         <item itemvalue="MUnit.Problem3Test" />
         <item itemvalue="MUnit.Problem1Test" />
-        <item itemvalue="MUnit.Problem2Test" />
-        <item itemvalue="Application.run" />
-        <item itemvalue="MUnit.Problem2Test.0" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687870853220</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Problem3">
+      <option name="closed" value="true" />
+      <created>1687949336253</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687949336253</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -264,6 +285,7 @@
     <MESSAGE value="Problem1 (Rec)" />
     <MESSAGE value="Problem2" />
     <MESSAGE value="Problem1 update recursion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Problem1 update recursion" />
+    <MESSAGE value="Problem3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Problem3" />
   </component>
 </project>
