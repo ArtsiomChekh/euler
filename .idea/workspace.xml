@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9651a77e-8e53-4fba-a0e7-bb24d6cc4692" name="Changes" comment="P4: def isPalindrome">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/P1_MultiplesOf3Or5.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P1_MultiplesOf3Or5.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/problems/P2_EvenFibonacciNumbers.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P2_EvenFibonacciNumbers.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/P3_LargestPrimeFactor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P3_LargestPrimeFactor.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/P4_LargestPalindromeProduct.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P4_LargestPalindromeProduct.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
       <recent name="problems" />
     </key>
   </component>
-  <component name="RunManager" selected="MUnit.P1_MultiplesOf3Or5Test">
+  <component name="RunManager" selected="MUnit.P2_EvenFibonacciNumbersTest">
     <configuration name="P1_MultiplesOf3Or5Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="euler" />
       <option name="VMParameters" value="" />
@@ -209,8 +207,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="MUnit.P1_MultiplesOf3Or5Test" />
         <item itemvalue="MUnit.P2_EvenFibonacciNumbersTest" />
+        <item itemvalue="MUnit.P1_MultiplesOf3Or5Test" />
         <item itemvalue="MUnit.P4_LargestPalindromeProductTest" />
         <item itemvalue="MUnit.P4_LargestPalindromeProductTest.1" />
         <item itemvalue="MUnit.P3_LargestPrimeFactorTest" />
@@ -317,7 +315,23 @@
       <option name="project" value="LOCAL" />
       <updated>1688049036963</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="P4: def isPalindrome">
+      <option name="closed" value="true" />
+      <created>1688050383599</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1688050383599</updated>
+    </task>
+    <task id="LOCAL-00013" summary="P4: def isPalindrome">
+      <option name="closed" value="true" />
+      <created>1688050579146</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1688050579146</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
