@@ -29,8 +29,9 @@ object P2_EvenFibonacciNumbers:
       else if c % 2 == 0 then
         loop(c + p, c, sum + c)
       else
-        loop(c + p, c,  sum)
-    loop(1,0,0)
+        loop(c + p, c, sum)
+
+    loop(1, 0, 0)
 
 
 
