@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9651a77e-8e53-4fba-a0e7-bb24d6cc4692" name="Changes" comment="P4: def isPalindrome">
       <change beforePath="$PROJECT_DIR$/.bsp/sbt.json" beforeDir="false" afterPath="$PROJECT_DIR$/.bsp/sbt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/P1_MultiplesOf3or5.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P1_MultiplesOf3or5.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/problems/P1_MultiplesOf3or5Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/problems/P1_MultiplesOf3or5Suite.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/P2_EvenFibonacciNumbers.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P2_EvenFibonacciNumbers.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/problems/P1_MultiplesOf3or5Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/problems/P1_MultiplesOf3or5Test.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/problems/P2_EvenFibonacciNumbersTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/problems/P2_EvenFibonacciNumbersTest.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +72,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "MUnit",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.MUnit": "munit.FunSuite",
     "last_opened_file_path": "/Users/artsiomchekh/Downloads/IdeaProjects/euler",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -87,33 +86,7 @@
       <recent name="problems" />
     </key>
   </component>
-  <component name="RunManager" selected="MUnit.P1_MultiplesOf3or5Suite">
-    <configuration name="P1_MultiplesOf3Or5Test" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="euler" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Class" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <option name="testClassPath" value="problems.P1_MultiplesOf3Or5Test" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="MUnit.P2_EvenFibonacciNumbersTest">
     <configuration name="P1_MultiplesOf3or5Suite" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="euler" />
       <option name="VMParameters" value="" />
@@ -192,6 +165,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="P2_EvenFibonacciNumbersTest.tail recursion" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="euler" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="testClassPath" value="problems.P2_EvenFibonacciNumbersTest" />
+      <option name="testName" value="tail recursion" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="euler" />
       <option name="allowRunningInParallel" value="false" />
@@ -208,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="MUnit.P2_EvenFibonacciNumbersTest" />
+        <item itemvalue="MUnit.P2_EvenFibonacciNumbersTest.tail recursion" />
         <item itemvalue="MUnit.P1_MultiplesOf3or5Suite" />
         <item itemvalue="MUnit.P1_MultiplesOf3or5Test" />
         <item itemvalue="Scala REPL.Scala REPL" />
-        <item itemvalue="MUnit.P2_EvenFibonacciNumbersTest" />
-        <item itemvalue="MUnit.P1_MultiplesOf3Or5Test" />
       </list>
     </recent_temporary>
   </component>
