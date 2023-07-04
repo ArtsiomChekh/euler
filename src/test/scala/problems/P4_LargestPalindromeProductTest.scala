@@ -1,8 +1,8 @@
 package problems
 
-import junit.framework.Assert.{assertFalse, assertTrue}
 import munit.FunSuite
-import problems.P4_LargestPalindromeProduct.{isPalindrome, largestPalindromeProduct}
+import org.junit.Assert.{assertFalse, assertTrue}
+import problems.P4_LargestPalindromeProduct.{isPalindrome, largestPalindromeProduct, reverse}
 
 class P4_LargestPalindromeProductTest extends FunSuite:
   test("121"):
@@ -25,8 +25,13 @@ class P4_LargestPalindromeProductTest extends FunSuite:
     assertFalse(isPalindrome(12))
 
   test("121221"):
-      assertFalse(isPalindrome(121221))
+    assertFalse(isPalindrome(121221))
 
   test("906609"):
-      assertTrue(isPalindrome(906609))
+    assertTrue(isPalindrome(906609))
+
+  test("reverse"):
+    assertEquals(reverse(123), 321)
+    assertEquals(reverse(123512), 215321)
+    assertEquals(reverse(906609), 906609)
 
