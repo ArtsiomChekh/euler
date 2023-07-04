@@ -32,6 +32,8 @@ object P2_EvenFibonacciNumbers:
         loop(c + p, c, sum)
 
     loop(1, 0, 0)
+end P2_EvenFibonacciNumbers
+
 
 
 

@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9651a77e-8e53-4fba-a0e7-bb24d6cc4692" name="Changes" comment="P4: def isPalindrome">
-      <change beforePath="$PROJECT_DIR$/.bsp/sbt.json" beforeDir="false" afterPath="$PROJECT_DIR$/.bsp/sbt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9651a77e-8e53-4fba-a0e7-bb24d6cc4692" name="Changes" comment="P2: def sumOfEvenFibonacciNumbersByTailRec">
       <change beforePath="$PROJECT_DIR$/src/main/scala/problems/P2_EvenFibonacciNumbers.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P2_EvenFibonacciNumbers.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/problems/P1_MultiplesOf3or5Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/problems/P1_MultiplesOf3or5Test.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/problems/P2_EvenFibonacciNumbersTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/problems/P2_EvenFibonacciNumbersTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/problems/P3_LargestPrimeFactor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/problems/P3_LargestPrimeFactor.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +82,7 @@
       <recent name="problems" />
     </key>
   </component>
-  <component name="RunManager" selected="MUnit.P2_EvenFibonacciNumbersTest">
+  <component name="RunManager" selected="MUnit.P3_LargestPrimeFactorTest">
     <configuration name="P1_MultiplesOf3or5Suite" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="euler" />
       <option name="VMParameters" value="" />
@@ -192,15 +188,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="P3_LargestPrimeFactorTest" type="MUnitRunConfiguration" factoryName="MUnit" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="euler" />
+      <option name="VMParameters" value="" />
       <option name="allowRunningInParallel" value="false" />
-      <option name="javaOptions" value="-Djline.terminal=NONE" />
-      <option name="myConsoleArgs" value="" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
+      <option name="testKind" value="Class" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="testClassPath" value="problems.P3_LargestPrimeFactorTest" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -208,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="MUnit.P3_LargestPrimeFactorTest" />
         <item itemvalue="MUnit.P2_EvenFibonacciNumbersTest" />
         <item itemvalue="MUnit.P2_EvenFibonacciNumbersTest.tail recursion" />
         <item itemvalue="MUnit.P1_MultiplesOf3or5Suite" />
         <item itemvalue="MUnit.P1_MultiplesOf3or5Test" />
-        <item itemvalue="Scala REPL.Scala REPL" />
       </list>
     </recent_temporary>
   </component>
@@ -332,7 +340,23 @@
       <option name="project" value="LOCAL" />
       <updated>1688050579146</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="P2: def sumOfEvenFibonacciNumbersByTailRec">
+      <option name="closed" value="true" />
+      <created>1688458723734</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1688458723734</updated>
+    </task>
+    <task id="LOCAL-00015" summary="P2: def sumOfEvenFibonacciNumbersByTailRec">
+      <option name="closed" value="true" />
+      <created>1688458765474</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1688458765474</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -346,6 +370,7 @@
     <MESSAGE value="Links and Class names" />
     <MESSAGE value="P3: simplify code - remove one line" />
     <MESSAGE value="P4: def isPalindrome" />
-    <option name="LAST_COMMIT_MESSAGE" value="P4: def isPalindrome" />
+    <MESSAGE value="P2: def sumOfEvenFibonacciNumbersByTailRec" />
+    <option name="LAST_COMMIT_MESSAGE" value="P2: def sumOfEvenFibonacciNumbersByTailRec" />
   </component>
 </project>
