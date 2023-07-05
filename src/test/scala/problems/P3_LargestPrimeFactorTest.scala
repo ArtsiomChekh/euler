@@ -4,8 +4,8 @@ import munit.FunSuite
 import problems.P3_LargestPrimeFactor.largestPrimeFactor
 
 class P3_LargestPrimeFactorTest extends FunSuite:
-  test("0"): 
-    assertEquals(largestPrimeFactor(0), 0)
+  test("2"):
+    assertEquals(largestPrimeFactor(2), 2)
   
   test("10"): 
     assertEquals(largestPrimeFactor(10), 5)

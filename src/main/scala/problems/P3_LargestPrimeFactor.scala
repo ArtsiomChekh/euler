@@ -6,15 +6,16 @@ package problems
  */
 object P3_LargestPrimeFactor:
   def largestPrimeFactor(n: Long): Int =
-    var largest = 0
+    require(n > 1, "Prime factors are those numbers with only two factors:" +
+      " 1 and themselves, and because of this, the numbers 0 and 1 cannot be prime numbers." +
+      " Think about it!")
     var divider = 2
     var num = n
     while (num > 1)
       if num % divider == 0 then
-        largest = divider
         num /= divider
       else
         divider += 1
-    largest
+    divider
 end P3_LargestPrimeFactor
 
