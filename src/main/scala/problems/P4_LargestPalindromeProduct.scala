@@ -19,12 +19,11 @@ object P4_LargestPalindromeProduct:
 
   def largestPalindromeProduct(): Int =
     var largest = 0
-    for x: Int <- 100 to 999 by +1 do
-      for y: Int <- 999 to 100 by -1 do
+    for x <- 100 to 999 do
+      for y <- x to 999 do
         val pre = x * y
-        if isPalindrome(pre) then
-          if largest < pre then
-            largest = pre
+        if isPalindrome(pre) && largest < pre then
+          largest = pre
     largest
 end P4_LargestPalindromeProduct
 
