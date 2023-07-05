@@ -27,8 +27,12 @@ object P1_MultiplesOf3or5:
 
     loop(n - 1, 0)
 
-  def sumOfMultiplesBelowWithoutLoopAndRecursion(n: Int): Int =
-    3 * ((n - 1) / 3) * (1 + (n - 1) / 3) / 2 + 5 * ((n - 1) / 5) * (1 + (n - 1) / 5) / 2 - 15 * ((n - 1) / 15) * (1 + (n - 1) / 15) / 2
+  def sumOfMultiplesBelowByFormula(n: Int): Int =
+    def f(x: Int) =
+      x * ((n - 1) / x) * (1 + (n - 1) / x) / 2
+
+    f(3) + f(5) - f(15)
 end P1_MultiplesOf3or5
+
 
 
