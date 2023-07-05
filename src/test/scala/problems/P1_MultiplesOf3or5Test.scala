@@ -54,8 +54,8 @@ class P1_MultiplesOf3or5Test extends munit.FunSuite:
     assertEquals(sumOfMultiplesOf3or5BelowByFormula(1000), 233168)
 
   test("sumOfMultiplesBelow"):
-    assertEquals(sumOfMultiplesBelow(3,10), 18)
-    assertEquals(sumOfMultiplesBelow(5,15), 15)
+    assertEquals(sumOfMultiplesBelow(3, 10), 18)
+    assertEquals(sumOfMultiplesBelow(5, 15), 15)
     assertEquals(sumOfMultiplesBelow(15, 60), 90)
 
 
