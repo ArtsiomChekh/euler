@@ -7,12 +7,12 @@ import scala.annotation.tailrec
  * https://projecteuler.net/problem=2
  */
 object P2_EvenFibonacciNumbers:
-  def sumOfEvenFibonacciNumbers(x: Int): Int =
+  def sumOfEvenFibonacciNumbers(n: Int): Int =
     var sum = 0
     var a = 0
     var b = 1
     var c = a + b
-    while c <= x do
+    while c <= n do
       if c % 2 == 0 then
         sum += c
       a = b
@@ -21,17 +21,17 @@ object P2_EvenFibonacciNumbers:
     sum
 
   // @tailrec
-  def sumOfEvenFibonacciNumbersByTailRec(x: Int): Int =
+  def sumOfEvenFibonacciNumbersByTailRec(n: Int): Int =
     @tailrec
-    def loop(c: Int, p: Int, sum: Int): Int =
-      if c > x then
+    def loop(a: Int, b: Int, sum: Int): Int =
+      if a > n then
         sum
-      else if c % 2 == 0 then
-        loop(c + p, c, sum + c)
+      else if a % 2 == 0 then
+        loop(a + b, a, sum + a)
       else
-        loop(c + p, c, sum)
+        loop(a + b, a, sum)
 
-    loop(1, 0, 0)
+    loop(0, 1, 0)
 end P2_EvenFibonacciNumbers
 
 

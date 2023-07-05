@@ -44,7 +44,7 @@ class P1_MultiplesOf3or5Test extends munit.FunSuite:
   test("1000"):
     assertEquals(sumOfMultiplesBelowByRecursion(1000), 233168)
 
-  test("sumOfMultiplesBelowWithoutLoopAndRecursion"):
+  test("sumOfMultiplesBelowByFormula"):
     assertEquals(sumOfMultiplesBelowByFormula(1), 0)
     assertEquals(sumOfMultiplesBelowByFormula(2), 0)
     assertEquals(sumOfMultiplesBelowByFormula(3), 0)
