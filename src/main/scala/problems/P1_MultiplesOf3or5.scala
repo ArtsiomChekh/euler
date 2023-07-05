@@ -7,9 +7,9 @@ import scala.annotation.tailrec
  * https://projecteuler.net/problem=1
  */
 object P1_MultiplesOf3or5:
-  def sumOfMultiplesBelow(x: Int): Int =
+  def sumOfMultiplesBelow(n: Int): Int =
     var res = 0
-    for (i <- x - 1 until 0 by -1)
+    for (i <- n - 1 until 0 by -1)
       if (i % 3 == 0 || i % 5 == 0)
         res += i
     res
@@ -27,11 +27,11 @@ object P1_MultiplesOf3or5:
 
     loop(n - 1, 0)
 
-  def sumOfMultiplesBelowByFormula(n: Int): Int =
-    def f(x: Int) =
-      x * ((n - 1) / x) * (1 + (n - 1) / x) / 2
+  def sumOfMultiplesOf3or5BelowByFormula(n: Int): Int =
+    sumOfMultiplesBelow(3, n) + sumOfMultiplesBelow(5, n) - sumOfMultiplesBelow(15, n)
 
-    f(3) + f(5) - f(15)
+  def sumOfMultiplesBelow(x: Int, n: Int): Int =
+    x * ((n - 1) / x) * (1 + (n - 1) / x) / 2
 end P1_MultiplesOf3or5
 
 

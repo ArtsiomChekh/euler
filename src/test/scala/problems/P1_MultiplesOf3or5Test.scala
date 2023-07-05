@@ -44,14 +44,19 @@ class P1_MultiplesOf3or5Test extends munit.FunSuite:
   test("1000"):
     assertEquals(sumOfMultiplesBelowByRecursion(1000), 233168)
 
-  test("sumOfMultiplesBelowByFormula"):
-    assertEquals(sumOfMultiplesBelowByFormula(1), 0)
-    assertEquals(sumOfMultiplesBelowByFormula(2), 0)
-    assertEquals(sumOfMultiplesBelowByFormula(3), 0)
-    assertEquals(sumOfMultiplesBelowByFormula(5), 3)
-    assertEquals(sumOfMultiplesBelowByFormula(6), 8)
-    assertEquals(sumOfMultiplesBelowByFormula(10), 23)
-    assertEquals(sumOfMultiplesBelowByFormula(1000), 233168)
+  test("sumOfMultiplesOf3or5BelowByFormula"):
+    assertEquals(sumOfMultiplesOf3or5BelowByFormula(1), 0)
+    assertEquals(sumOfMultiplesOf3or5BelowByFormula(2), 0)
+    assertEquals(sumOfMultiplesOf3or5BelowByFormula(3), 0)
+    assertEquals(sumOfMultiplesOf3or5BelowByFormula(5), 3)
+    assertEquals(sumOfMultiplesOf3or5BelowByFormula(6), 8)
+    assertEquals(sumOfMultiplesOf3or5BelowByFormula(10), 23)
+    assertEquals(sumOfMultiplesOf3or5BelowByFormula(1000), 233168)
+
+  test("sumOfMultiplesBelow"):
+    assertEquals(sumOfMultiplesBelow(3,10), 18)
+    assertEquals(sumOfMultiplesBelow(5,15), 15)
+    assertEquals(sumOfMultiplesBelow(15, 60), 90)
 
 
 
