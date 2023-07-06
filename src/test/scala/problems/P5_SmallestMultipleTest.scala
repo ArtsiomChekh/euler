@@ -22,6 +22,6 @@ class P5_SmallestMultipleTest extends FunSuite:
     assertEquals(smallestMultiple(1, 5), 60)
     assertEquals(smallestMultiple(10, 12), 660)
     assertEquals(smallestMultiple(1, 10), 2520)
-    assertEquals(smallestMultiple(1, 20), 18044195)
+    assertEquals(smallestMultiple(1, 20), 232792560)
 
 

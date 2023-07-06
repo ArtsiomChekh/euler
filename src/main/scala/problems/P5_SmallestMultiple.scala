@@ -12,7 +12,7 @@ object P5_SmallestMultiple:
       gcd(b, a % b)
 
   def lcm(a: Int, b: Int): Int =
-    a * b / gcd(a, b)
+    b / gcd(a, b) * a
 
   def smallestMultiple(a: Int, b: Int): Int =
     var res = a
