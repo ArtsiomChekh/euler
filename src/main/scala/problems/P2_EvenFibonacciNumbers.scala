@@ -24,12 +24,12 @@ object P2_EvenFibonacciNumbers:
   def sumOfEvenFibonacciNumbersByTailRec(n: Int): Int =
     @tailrec
     def loop(a: Int, b: Int, sum: Int): Int =
-      if a > n then
+      if b > n then
         sum
-      else if a % 2 == 0 then
-        loop(a + b, a, sum + a)
+      else if b % 2 == 0 then
+        loop(b, a + b, sum + b)
       else
-        loop(a + b, a, sum)
+        loop(b, a + b, sum)
 
     loop(0, 1, 0)
 end P2_EvenFibonacciNumbers
