@@ -16,7 +16,7 @@ object P5_SmallestMultiple:
 
   def smallestMultiple(a: Int, b: Int): Int =
     var res = a
-    for i <- a + 1 to b do
+    for i <- a to b do
       res = lcm(res, i)
     res
 end P5_SmallestMultiple
