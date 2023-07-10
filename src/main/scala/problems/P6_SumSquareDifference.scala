@@ -17,7 +17,7 @@ object P6_SumSquareDifference:
   def sumOfTheSquares(n: Int): Int =
     var sum = 0
     for i <- 1 to n do
-      sum += i * i
+      sum += square(i)
     sum
 
   def sumSquareDifferenceByFormula(n: Int): Int =
