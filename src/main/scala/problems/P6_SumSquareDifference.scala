@@ -6,13 +6,13 @@ package problems
  */
 object P6_SumSquareDifference:
   def sumSquareDifference(n: Int): Int =
-    squareOfTheSum(n) - sumOfTheSquares(n)
+    square(sumOfNaturalNumbers(n)) - sumOfTheSquares(n)
 
-  def squareOfTheSum(n: Int): Int =
+  def sumOfNaturalNumbers(n: Int): Int =
     var sum = 0
     for i <- 1 to n do
       sum += i
-    sum * sum
+    sum
 
   def sumOfTheSquares(n: Int): Int =
     var sum = 0
@@ -21,14 +21,16 @@ object P6_SumSquareDifference:
     sum
 
   def sumSquareDifferenceByFormula(n: Int): Int =
-    squareOfTheSumByFormula(n) - sumOfTheSquaresByFormula(n)
-
-  // math.pow(n, 4) + 2 * math.pow(n, 3) + math.pow(n, 2)
-  def squareOfTheSumByFormula(n: Int): Int =
-    n * (n + 1) / 2 * n * (n + 1) / 2
+    square(sumOfArithmeticProgression(n)) - sumOfTheSquaresByFormula(n)
 
   def sumOfTheSquaresByFormula(n: Int): Int =
     (n * (n + 1) * (2 * n + 1)) / 6
+
+  def sumOfArithmeticProgression(n: Int): Int =
+    n * (n + 1) / 2
+
+  def square(n: Int): Int =
+    n * n
 end P6_SumSquareDifference
 
 
