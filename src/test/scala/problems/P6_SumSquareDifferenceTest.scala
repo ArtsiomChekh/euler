@@ -1,7 +1,7 @@
 package problems
 
 import munit.FunSuite
-import problems.P6_SumSquareDifference.{squareOfTheSum, sumOfTheSquares, sumSquareDifference}
+import problems.P6_SumSquareDifference.{squareOfTheSum, squareOfTheSumByFormula, sumOfTheSquares, sumOfTheSquaresByFormula, sumSquareDifference, sumSquareDifferenceByFormula}
 
 class P6_SumSquareDifferenceTest extends FunSuite:
   test("squareOfTheSum"):
@@ -19,6 +19,21 @@ class P6_SumSquareDifferenceTest extends FunSuite:
     assertEquals(sumOfTheSquares(100), 338350)
 
   test("sumSquareDifference"):
-    assertEquals(sumSquareDifference(squareOfTheSum(10), sumOfTheSquares(10)), 2640)
-    assertEquals(sumSquareDifference(squareOfTheSum(100), sumOfTheSquares(100)), 25164150)
+    assertEquals(sumSquareDifference(10), 2640)
+    assertEquals(sumSquareDifference(50), 1582700)
+    assertEquals(sumSquareDifference(100), 25164150)
 
+  test("sumSquareDifferenceByFormula"):
+    assertEquals(sumSquareDifferenceByFormula(10), 2640)
+    assertEquals(sumSquareDifferenceByFormula(50), 1582700)
+    assertEquals(sumSquareDifferenceByFormula(100), 25164150)
+
+  test("squareOfTheSumByFormula"):
+    assertEquals(squareOfTheSumByFormula(1), 1)
+    assertEquals(squareOfTheSumByFormula(3), 36)
+    assertEquals(squareOfTheSumByFormula(5), 225)
+
+  test("sumOfTheSquaresByFormula"):
+    assertEquals(sumOfTheSquaresByFormula(1), 1)
+    assertEquals(sumOfTheSquaresByFormula(3), 14)
+    assertEquals(sumOfTheSquaresByFormula(5), 55)
