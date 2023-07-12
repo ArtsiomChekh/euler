@@ -20,13 +20,13 @@ object P7_10001stPrime:
 
   def nthPrimeNumberByRecursion(n: Int): Int =
     @tailrec
-    def loop(a: Int, b: Int, primeCount: Int): Int =
+    def loop(currentPrime: Int, candidate: Int, primeCount: Int): Int =
       if primeCount > n then
-        a
-      else if isPrime(b) then
-        loop(a = b, b + 1, primeCount + 1)
+        currentPrime
+      else if isPrime(candidate) then
+        loop(currentPrime = candidate, candidate + 1, primeCount + 1)
       else
-        loop(a, b + 1, primeCount)
+        loop(currentPrime, candidate + 1, primeCount)
 
     loop(2, 2, 1)
 
