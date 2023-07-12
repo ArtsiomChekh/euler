@@ -8,16 +8,27 @@ import scala.annotation.tailrec
  */
 object P7_10001stPrime:
   def nthPrimeNumber(n: Int): Int =
-      var count = 1
-      var tPr = 2
-      var res = 0
-      while count <= n do
-        if isPrime(tPr) then
-          res = tPr
-          count += 1
-        tPr += 1
-      res
+    var counter = 1
+    var currPrime = 2
+    var res = 0
+    while counter <= n do
+      if isPrime(currPrime) then
+        res = currPrime
+        counter += 1
+      currPrime += 1
+    res
 
+  def nthPrimeNumberByRecursion(n: Int): Int =
+    @tailrec
+    def loop(currentPrime: Int, candidate: Int, primeCount: Int): Int =
+      if primeCount > n then
+        currentPrime
+      else if isPrime(candidate) then
+        loop(currentPrime = candidate, candidate + 1, primeCount + 1)
+      else
+        loop(currentPrime, candidate + 1, primeCount)
+
+    loop(2, 2, 1)
 
   @tailrec
   def isPrime(n: Int, i: Int = 2): Boolean =

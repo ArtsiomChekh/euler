@@ -19,3 +19,10 @@ class P7_10001stPrimeTest extends FunSuite:
     assertEquals(nthPrimeNumber(6), 13)
     assertEquals(nthPrimeNumber(10001), 104743)
 
+  test("nthPrimeNumberByRecursion"):
+    assertEquals(nthPrimeNumberByRecursion(1), 2)
+    assertEquals(nthPrimeNumberByRecursion(2), 3)
+    assertEquals(nthPrimeNumberByRecursion(3), 5)
+    assertEquals(nthPrimeNumberByRecursion(6), 13)
+    assertEquals(nthPrimeNumberByRecursion(10001), 104743)
+
