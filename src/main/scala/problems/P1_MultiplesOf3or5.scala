@@ -31,7 +31,7 @@ object P1_MultiplesOf3or5:
     sumOfMultiplesBelow(3, n) + sumOfMultiplesBelow(5, n) - sumOfMultiplesBelow(15, n)
 
   def sumOfMultiplesBelow(x: Int, n: Int): Int =
-    x * ((n - 1) / x) * (1 + (n - 1) / x) / 2
+    sumOfArithmeticProgression((n - 1) / x) * x
 end P1_MultiplesOf3or5
 
 

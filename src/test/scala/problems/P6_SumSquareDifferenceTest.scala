@@ -1,9 +1,11 @@
 package problems
 
 import munit.FunSuite
-import problems.P6_SumSquareDifference.{square, sumOfArithmeticProgression, sumOfNaturalNumbers, sumOfTheSquares, sumOfTheSquaresByFormula, sumSquareDifference, sumSquareDifferenceByFormula}
 
 class P6_SumSquareDifferenceTest extends FunSuite:
+
+  import P6_SumSquareDifference.*
+
   test("sumSquareDifference"):
     assertEquals(sumSquareDifference(10), 2640)
     assertEquals(sumSquareDifference(50), 1582700)

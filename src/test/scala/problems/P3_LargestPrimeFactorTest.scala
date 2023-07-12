@@ -1,9 +1,11 @@
 package problems
 
 import munit.FunSuite
-import problems.P3_LargestPrimeFactor.largestPrimeFactor
 
 class P3_LargestPrimeFactorTest extends FunSuite:
+
+  import P3_LargestPrimeFactor.*
+
   test("2"):
     assertEquals(largestPrimeFactor(2), 2)
 

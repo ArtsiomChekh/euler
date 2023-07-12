@@ -1,8 +1,9 @@
 package problems
 
-import problems.P1_MultiplesOf3or5.*
-
 class P1_MultiplesOf3or5Test extends munit.FunSuite:
+
+  import P1_MultiplesOf3or5.*
+
   test("0, 1, 2, 3"):
     assertEquals(sumOfMultiplesBelow(0), 0)
     assertEquals(sumOfMultiplesBelow(1), 0)

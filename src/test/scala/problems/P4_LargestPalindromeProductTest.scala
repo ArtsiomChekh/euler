@@ -2,9 +2,11 @@ package problems
 
 import munit.FunSuite
 import org.junit.Assert.{assertFalse, assertTrue}
-import problems.P4_LargestPalindromeProduct.{isPalindrome, largestPalindromeProduct, reverse}
 
 class P4_LargestPalindromeProductTest extends FunSuite:
+
+  import P4_LargestPalindromeProduct.*
+
   test("121"):
     assertNotEquals(largestPalindromeProduct(), 123)
 

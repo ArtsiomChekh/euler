@@ -1,9 +1,11 @@
 package problems
 
 import munit.FunSuite
-import problems.P2_EvenFibonacciNumbers.*
 
 class P2_EvenFibonacciNumbersTest extends FunSuite:
+
+  import P2_EvenFibonacciNumbers.*
+
   test("0"):
     assertEquals(sumOfEvenFibonacciNumbers(0), 0)
 

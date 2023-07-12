@@ -1,9 +1,10 @@
 package problems
 
 import munit.FunSuite
-import problems.P5_SmallestMultiple.{gcd, lcm, smallestMultiple}
 
 class P5_SmallestMultipleTest extends FunSuite:
+
+  import P5_SmallestMultiple.*
 
   test("gcd"):
     assertEquals(gcd(1, 2), 1)
