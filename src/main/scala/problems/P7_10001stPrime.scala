@@ -41,4 +41,7 @@ object P7_10001stPrime:
         loop(i + 1)
 
     loop(2)
+
+  def isPrimeNumber(n: Int): Boolean =
+    (2 until n).forall(n % _ != 0)
 end P7_10001stPrime

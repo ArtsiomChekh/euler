@@ -10,7 +10,19 @@ class P7_10001stPrimeTest extends FunSuite:
     assert(isPrime(2))
     assert(isPrime(3))
     assert(isPrime(5))
+    assert(isPrime(89))
     assert(isPrime(113))
+    assert(isPrime(271))
+    assert(isPrime(7211537))
+
+  test("isPrimeNumber"):
+    assert(isPrimeNumber(2))
+    assert(isPrimeNumber(3))
+    assert(isPrimeNumber(5))
+    assert(isPrimeNumber(89))
+    assert(isPrimeNumber(113))
+    assert(isPrimeNumber(271))
+    assert(isPrimeNumber(7211537))
 
   test("nthPrimeNumber"):
     assertEquals(nthPrimeNumber(1), 2)
