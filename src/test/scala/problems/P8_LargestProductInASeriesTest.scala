@@ -35,7 +35,7 @@ class P8_LargestProductInASeriesTest extends FunSuite:
   test("3 for 20-digit number"):
     assertEquals(largestProductInASeries(digitNumber20, 3), 504L)
 
-  test("4 for 1000-digit number"):
+  test("4 for 1000-digit number"):  
     assertEquals(largestProductInASeries(digitNumber1000, 4), 5832L)
 
   test("13 for 1000-digit number"):

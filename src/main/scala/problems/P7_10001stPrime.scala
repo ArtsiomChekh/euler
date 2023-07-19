@@ -33,7 +33,7 @@ object P7_10001stPrime:
   def isPrime(n: Int): Boolean =
     @tailrec
     def loop(i: Int): Boolean =
-      n == 2 || i * i > n || !(n % i == 0) && loop(i + 1)
+      n == 2 || i * i > n || n % i != 0 && loop(i + 1)
 
     loop(2)
 
