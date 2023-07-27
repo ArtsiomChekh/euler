@@ -34,13 +34,3 @@ class P6_SumSquareDifferenceTest extends FunSuite:
     assertEquals(sumOfTheSquaresByFormula(1), 1)
     assertEquals(sumOfTheSquaresByFormula(3), 14)
     assertEquals(sumOfTheSquaresByFormula(5), 55)
-
-  test("sumOfArithmeticProgression"):
-    assertEquals(sumOfArithmeticProgression(1), 1)
-    assertEquals(sumOfArithmeticProgression(3), 6)
-    assertEquals(sumOfArithmeticProgression(5), 15)
-
-  test("square"):
-    assertEquals(square(2), 4)
-    assertEquals(square(9), 81)
-    assertEquals(square(15), 225)

@@ -29,14 +29,7 @@ object P7_10001stPrime:
         loop(candidate + 1, primeCount)
 
     loop(2, 1)
-
-  def isPrime(n: Int): Boolean =
-    @tailrec
-    def loop(i: Int): Boolean =
-      n == 2 || i * i > n || n % i != 0 && loop(i + 1)
-
-    loop(2)
-
+  
   def isPrimeNumber(n: Int): Boolean =
     (2 until n).forall(n % _ != 0)
 end P7_10001stPrime
