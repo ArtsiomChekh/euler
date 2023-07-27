@@ -25,9 +25,7 @@ object P6_SumSquareDifference:
 
   def sumOfTheSquaresByFormula(n: Int): Int =
     (n * (n + 1) * (2 * n + 1)) / 6
-
-  def square(n: Int): Int =
-    n * n
+  
 end P6_SumSquareDifference
 
 
