@@ -15,14 +15,14 @@ class P9_SpecialPythagoreanTripletTest extends FunSuite:
   test("test 1000"):
     assertEquals(productSpecialTriplet(1000), 31875000)
 
-  test("isPythagoreanTriple"):
-    assert(isPythagoreanTriple(3, 4, 5))
-    assert(isPythagoreanTriple(9, 12, 15))
-    assert(isPythagoreanTriple(12, 16, 20))
+  test("isPythagoreanTriplet"):
+    assert(isPythagoreanTriplet(3, 4, 5))
+    assert(isPythagoreanTriplet(9, 12, 15))
+    assert(isPythagoreanTriplet(12, 16, 20))
 
-    assert(!isPythagoreanTriple(3, 4, 6))
-    assert(!isPythagoreanTriple(5, 8, 9))
-    assert(!isPythagoreanTriple(12, 20, 16))
+    assert(!isPythagoreanTriplet(3, 4, 6))
+    assert(!isPythagoreanTriplet(5, 8, 9))
+    assert(!isPythagoreanTriplet(12, 20, 16))
 
 
 

@@ -10,10 +10,10 @@ object P9_SpecialPythagoreanTriplet:
     for a <- 1 to n do
       for b <- a to n do
         val c = n - a - b
-        if isPythagoreanTriple(a, b, c) then
+        if isPythagoreanTriplet(a, b, c) then
           res = a * b * c
     res
 
-  def isPythagoreanTriple(a: Int, b: Int, c: Int): Boolean =
+  def isPythagoreanTriplet(a: Int, b: Int, c: Int): Boolean =
     square(a) + square(b) == square(c)
 end P9_SpecialPythagoreanTriplet
