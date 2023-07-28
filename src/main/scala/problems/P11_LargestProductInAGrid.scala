@@ -27,7 +27,25 @@ object P11_LargestProductInAGrid:
       "20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54 " +
       "01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48 "
 
-  def stringToMatrix20X20(str: String): Array[Array[Int]] =
-    grid.split(" ").map(_.toInt).grouped(20).toArray
+  def stringToArray(str: String): Array[Int] =
+    str.split(" ").map(_.toInt)
 
+  def arrayToMatrix20X20(str: String): Array[Array[Int]] =
+    stringToArray(str).grouped(20).toArray
+
+  def largestGridProduct(grid: String, n: Int): Int =
+    val matrix = arrayToMatrix20X20(grid)
+    val amountOfElements = stringToArray(grid).length
+    var largestProduct = 0
+
+    for row <- 0 to amountOfElements do
+      for column <- 0 to matrix(0).length do
+        var cell = matrix(row)(column)
+        var product = 1
+        for i <- 1 to n do
+          if column + i < matrix(0).length then
+            product = product * matrix(row)(column + i)
+        if product > largestProduct then
+          largestProduct = product
+    largestProduct
 
