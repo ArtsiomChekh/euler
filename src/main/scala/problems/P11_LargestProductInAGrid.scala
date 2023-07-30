@@ -35,17 +35,25 @@ object P11_LargestProductInAGrid:
 
   def largestGridProduct(grid: String, n: Int): Int =
     val matrix = arrayToMatrix20X20(grid)
-    val amountOfElements = stringToArray(grid).length
     var largestProduct = 0
-
-    for row <- 0 to amountOfElements do
-      for column <- 0 to matrix(0).length do
-        var cell = matrix(row)(column)
-        var product = 1
-        for i <- 1 to n do
+    // left right
+    for row <- matrix.indices do
+      for column <- matrix(0).indices do
+        val cell = matrix(row)(column)
+        var product = cell
+        for i <- 1 until n do
           if column + i < matrix(0).length then
             product = product * matrix(row)(column + i)
         if product > largestProduct then
           largestProduct = product
+
+        // up down
+        product = cell
+        for i <- 1 until n do
+          if row + i < matrix.length then
+            product = product * matrix(row + i)(column)
+        if product > largestProduct then
+          largestProduct = product
+
     largestProduct
 
