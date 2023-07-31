@@ -29,10 +29,17 @@ class P11_LargestProductInAGridTest extends FunSuite:
       "01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48 "
 
   var testGrid: String =
+    "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
       "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
       "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
       "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
-      "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
+      "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 "
+
+  var testGrid2: String =
+    "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
+      "05 02 03 05 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
+      "05 02 05 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
+      "05 05 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
       "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 "
 
 
@@ -46,17 +53,22 @@ class P11_LargestProductInAGridTest extends FunSuite:
     assertEquals(largestLeftAndRight(testGrid, 2), 20)
     assertEquals(largestLeftAndRight(testGrid, 4), 300)
 
-  test("largestDiagonallyLeftAndRight for testGrid where sequence = 2,4"):
+  test("largestUpAndDown for testGrid where sequence = 2,4"):
     assertEquals(largestUpAndDown(testGrid, 2), 25)
     assertEquals(largestUpAndDown(testGrid, 4), 625)
 
-  test("largestDiagonallyLeftUPToRightDown for testGrid where sequence = 2,4"):
-    assertEquals(largestDiagonallyLeftUPToRightDown(testGrid, 2), 20)
-    assertEquals(largestDiagonallyLeftUPToRightDown(testGrid, 4), 300)
+  test("largestDescendingAndAscendingDiagonal for testGrid2 where sequence = 2,4"):
+    assertEquals(largestDescendingAndAscendingDiagonal(testGrid2, 2), 25)
+    assertEquals(largestDescendingAndAscendingDiagonal(testGrid2, 4), 625)
 
-//  test("largestDiagonallyLeftDownToRightUP for testGrid where sequence = 2,4"):
-//    assertEquals(largestDiagonallyLeftDownToRightUP(testGrid, 2), 20)
-//    assertEquals(largestDiagonallyLeftDownToRightUP(testGrid, 4), 300)
+  test("largestProductInAGrid for testGrid where sequence = 2,4"):
+    assertEquals(largestProductInAGrid(testGrid, 2), 25)
+    assertEquals(largestProductInAGrid(testGrid, 4), 625)
+
+  test("largestProductInAGrid for grid where sequence = 2,4"):
+    assertEquals(largestProductInAGrid(grid, 2), 9603)
+    assertEquals(largestProductInAGrid(grid, 4), 70600674)
+
 
 
 
