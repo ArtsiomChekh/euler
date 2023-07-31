@@ -49,17 +49,17 @@ class P11_LargestProductInAGridTest extends FunSuite:
   test("Array to matrix20X20"):
     assertEquals(arrayToMatrix20X20(grid).length, 20)
 
-  test("largestLeftAndRight for testGrid where sequence = 2,4"):
-    assertEquals(largestLeftAndRight(testGrid, 2), 20)
-    assertEquals(largestLeftAndRight(testGrid, 4), 300)
+  test("largestLeftRightDirection for testGrid where sequence = 2,4"):
+    assertEquals(largestLeftRightDirection(testGrid, 2), 20)
+    assertEquals(largestLeftRightDirection(testGrid, 4), 300)
 
-  test("largestUpAndDown for testGrid where sequence = 2,4"):
-    assertEquals(largestUpAndDown(testGrid, 2), 25)
-    assertEquals(largestUpAndDown(testGrid, 4), 625)
+  test("largestUpDownDirection for testGrid where sequence = 2,4"):
+    assertEquals(largestUpDownDirection(testGrid, 2), 25)
+    assertEquals(largestUpDownDirection(testGrid, 4), 625)
 
-  test("largestDescendingAndAscendingDiagonal for testGrid2 where sequence = 2,4"):
-    assertEquals(largestDescendingAndAscendingDiagonal(testGrid2, 2), 25)
-    assertEquals(largestDescendingAndAscendingDiagonal(testGrid2, 4), 625)
+  test("largestDescendingAscendingDiagonalDirection for testGrid2 where sequence = 2,4"):
+    assertEquals(largestDescendingAscendingDiagonalDirection(testGrid2, 2), 25)
+    assertEquals(largestDescendingAscendingDiagonalDirection(testGrid2, 4), 625)
 
   test("largestProductInAGrid for testGrid where sequence = 2,4"):
     assertEquals(largestProductInAGrid(testGrid, 2), 25)

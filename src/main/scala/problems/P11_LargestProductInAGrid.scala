@@ -6,13 +6,13 @@ package problems
  */
 object P11_LargestProductInAGrid:
   def largestProductInAGrid(grid: String, n: Int): Int =
-    val largestLR = largestLeftAndRight(grid, n)
-    val largestUD = largestUpAndDown(grid, n)
-    val largestDAD = largestDescendingAndAscendingDiagonal(grid, n)
+    val largestLR = largestLeftRightDirection(grid, n)
+    val largestUD = largestUpDownDirection(grid, n)
+    val largestDAD = largestDescendingAscendingDiagonalDirection(grid, n)
 
     List(largestLR, largestUD, largestDAD).max
 
-  def largestLeftAndRight(grid: String, n: Int): Int =
+  def largestLeftRightDirection(grid: String, n: Int): Int =
     val matrix = arrayToMatrix20X20(grid)
     var largestProduct = 0
 
@@ -28,7 +28,7 @@ object P11_LargestProductInAGrid:
 
     largestProduct
 
-  def largestUpAndDown(grid: String, n: Int): Int =
+  def largestUpDownDirection(grid: String, n: Int): Int =
     val matrix = arrayToMatrix20X20(grid)
     var largestProduct = 0
 
@@ -44,7 +44,7 @@ object P11_LargestProductInAGrid:
 
     largestProduct
 
-  def largestDescendingAndAscendingDiagonal(grid: String, n: Int): Int =
+  def largestDescendingAscendingDiagonalDirection(grid: String, n: Int): Int =
     val matrix = arrayToMatrix20X20(grid)
     var largestProduct = 0
 
