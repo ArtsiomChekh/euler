@@ -33,10 +33,10 @@ object P11_LargestProductInAGrid:
   def arrayToMatrix20X20(str: String): Array[Array[Int]] =
     stringToArray(str).grouped(20).toArray
 
-  def largestGridProduct(grid: String, n: Int): Int =
+  def largestLeftAndRight(grid: String, n: Int): Int =
     val matrix = arrayToMatrix20X20(grid)
     var largestProduct = 0
-    // left right
+
     for row <- matrix.indices do
       for column <- matrix(0).indices do
         val cell = matrix(row)(column)
@@ -47,8 +47,16 @@ object P11_LargestProductInAGrid:
         if product > largestProduct then
           largestProduct = product
 
-        // up down
-        product = cell
+    largestProduct
+
+  def largestUpAndDown(grid: String, n: Int): Int =
+    val matrix = arrayToMatrix20X20(grid)
+    var largestProduct = 0
+
+    for row <- matrix.indices do
+      for column <- matrix(0).indices do
+        val cell = matrix(row)(column)
+        var product = cell
         for i <- 1 until n do
           if row + i < matrix.length then
             product = product * matrix(row + i)(column)
@@ -57,3 +65,35 @@ object P11_LargestProductInAGrid:
 
     largestProduct
 
+  def  (grid: String, n: Int): Int =
+    val matrix = arrayToMatrix20X20(grid)
+    var largestProduct = 0
+
+    for row <- matrix.indices do
+      for column <- matrix(0).indices do
+        val cell = matrix(row)(column)
+        var product = cell
+        for i <- 1 until n do
+          if row + i < matrix.length && column + i < matrix(0).length then
+            product = product * matrix(row + i)(column + i)
+        if product > largestProduct then
+          largestProduct = product
+
+    largestProduct
+
+//  def largestDiagonallyLeftDownToRightUP(grid: String, n: Int): Int =
+//    val matrix = arrayToMatrix20X20(grid)
+//    var largestProduct = 0
+//
+//    for row <- matrix.indices do
+//      for column <- matrix(0).indices do
+//        val cell = matrix(row)(column)
+//        var product = cell
+//        for i <- 1 until n do
+//          if row - i < matrix.length && row - i > 0 && column + i < matrix(0).length ||
+//            row < matrix.length && column + i < matrix(0).length then
+//            product = product * matrix(row - i)(column + i)
+//        if product > largestProduct then
+//          largestProduct = product
+//
+//    largestProduct

@@ -2,7 +2,7 @@ package problems
 
 import munit.FunSuite
 
-class P11_LargestProductInAGridTest extends FunSuite :
+class P11_LargestProductInAGridTest extends FunSuite:
 
   import P11_LargestProductInAGrid.*
 
@@ -29,27 +29,36 @@ class P11_LargestProductInAGridTest extends FunSuite :
       "01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48 "
 
   var testGrid: String =
-    "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
+      "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
+      "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
       "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
       "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 " +
       "05 02 03 04 05 03 04 05 01 02 01 02 03 04 05 03 04 05 01 02 "
 
 
   test("String to array"):
-    assertEquals
-  (stringToArray(grid).length, 400)
+    assertEquals(stringToArray(grid).length, 400)
 
   test("Array to matrix20X20"):
-    assertEquals
-  (arrayToMatrix20X20(grid).length, 20)
+    assertEquals(arrayToMatrix20X20(grid).length, 20)
 
-  test("testGrid left right 2"):
-    assertEquals
-  (largestGridProduct(testGrid, 2), 20)
+  test("largestLeftAndRight for testGrid where sequence = 2,4"):
+    assertEquals(largestLeftAndRight(testGrid, 2), 20)
+    assertEquals(largestLeftAndRight(testGrid, 4), 300)
 
-  test("testGrid left right 4"):
-    assertEquals
-  (largestGridProduct(testGrid, 4), 300)
+  test("largestDiagonallyLeftAndRight for testGrid where sequence = 2,4"):
+    assertEquals(largestUpAndDown(testGrid, 2), 25)
+    assertEquals(largestUpAndDown(testGrid, 4), 625)
+
+  test("largestDiagonallyLeftUPToRightDown for testGrid where sequence = 2,4"):
+    assertEquals(largestDiagonallyLeftUPToRightDown(testGrid, 2), 20)
+    assertEquals(largestDiagonallyLeftUPToRightDown(testGrid, 4), 300)
+
+//  test("largestDiagonallyLeftDownToRightUP for testGrid where sequence = 2,4"):
+//    assertEquals(largestDiagonallyLeftDownToRightUP(testGrid, 2), 20)
+//    assertEquals(largestDiagonallyLeftDownToRightUP(testGrid, 4), 300)
+
+
 
 
 
