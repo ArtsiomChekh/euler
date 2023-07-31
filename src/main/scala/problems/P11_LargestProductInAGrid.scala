@@ -65,7 +65,7 @@ object P11_LargestProductInAGrid:
 
     largestProduct
 
-  def  (grid: String, n: Int): Int =
+  def largestDiagonallyLeftUPToRightDown(grid: String, n: Int): Int =
     val matrix = arrayToMatrix20X20(grid)
     var largestProduct = 0
 
