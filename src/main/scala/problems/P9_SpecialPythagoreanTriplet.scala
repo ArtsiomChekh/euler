@@ -16,7 +16,7 @@ object P9_SpecialPythagoreanTriplet:
       if isPythagoreanTriplet(a, b, c)
     } yield
       List(a, b, c)
-
+      
   def isPythagoreanTriplet(a: Int, b: Int, c: Int): Boolean =
     square(a) + square(b) == square(c)
 end P9_SpecialPythagoreanTriplet
