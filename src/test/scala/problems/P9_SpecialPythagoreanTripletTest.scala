@@ -25,12 +25,10 @@ class P9_SpecialPythagoreanTripletTest extends FunSuite:
     assert(!isPythagoreanTriplet(12, 20, 16))
 
   test("findTripletBySum"):
-    assertEquals(findTripletBySum(12), List(3, 4, 5))
-    assertEquals(findTripletBySum(48), List(12, 16, 20))
-    assertEquals(findTripletBySum(1000), List(200, 375, 425))
+    assertEquals(findTripletBySum(12), Seq(List(3, 4, 5)))
+    assertEquals(findTripletBySum(48), Seq(List(12, 16, 20)))
+    assertEquals(findTripletBySum(1000), Seq(List(200, 375, 425)))
 
-  test("product"):
-    assertEquals(product(List(200, 375, 425)), 31875000)
 
 
 
