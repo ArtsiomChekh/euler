@@ -5,9 +5,8 @@ package problems
  * https://projecteuler.net/problem=9
  */
 object P9_SpecialPythagoreanTriplet:
-  def productSpecialTriplet(sum: Int): Int = {
+  def productSpecialTriplet(sum: Int): Int =
     findTripletBySum(sum).flatten.product
-  }
 
   def findTripletBySum(sum: Int): Seq[List[Int]] =
     for {
@@ -22,4 +21,3 @@ object P9_SpecialPythagoreanTriplet:
     square(a) + square(b) == square(c)
 end P9_SpecialPythagoreanTriplet
 
-// написать тесты на пустой список 60 и 120
