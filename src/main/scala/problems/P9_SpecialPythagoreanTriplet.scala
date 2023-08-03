@@ -9,7 +9,6 @@ object P9_SpecialPythagoreanTriplet:
     val triplets = findTripletsBySum(sum)
     assert(triplets.size == 1, "must be only one triplet")
     triplets.head.product
-    //  написать тест на перехват assert
 
   def findTripletsBySum(sum: Int): Seq[List[Int]] =
     for

@@ -11,9 +11,14 @@ class P9_SpecialPythagoreanTripletTest extends FunSuite:
 
   test("productSpecialTriplet 24"):
     assertEquals(productSpecialTriplet(24), 480)
-    
+
   test("productSpecialTriplet 1000"):
     assertEquals(productSpecialTriplet(1000), 31875000)
+
+  test("must be only one triplet"):
+    intercept[AssertionError] {
+      productSpecialTriplet(60)
+    }
 
   test("isPythagoreanTriplet"):
     assert(isPythagoreanTriplet(3, 4, 5))
