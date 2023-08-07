@@ -1,6 +1,6 @@
 package problems
 
-import problems.P12_HighlyDivisibleTriangularNumber.findFactorsOfNumber
+import scala.math
 
 /*
  * Highly Divisible Triangular Number
@@ -23,8 +23,6 @@ object P12_HighlyDivisibleTriangularNumber:
     for (count <- 1 to n)
       currentTriangle = currentTriangle + count
     currentTriangle
-
-  import scala.math
 
   def findFactorsOfNumber(n: Int): List[Int] =
     var factors: List[Int] = List()
