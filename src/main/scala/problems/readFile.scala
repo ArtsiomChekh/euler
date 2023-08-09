@@ -10,3 +10,6 @@ def readFile(filePath: String): String =
 
 def convertStringToArray(input: String): Array[Int] =
   input.filter(_.isDigit).split("").map(_.toInt)
+
+def convertStringWithSpacesToArray(input: String): Array[Int] =
+  input.split("\\s+").map(_.toInt)
