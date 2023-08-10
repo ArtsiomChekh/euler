@@ -21,10 +21,7 @@ object P10_SummationOfPrimes:
     loop(2, 0)
 
   def summationOfPrimesBelow(n: Int): Long =
-    sumOfList(getAllPrimesBelow(n))
-
-  def sumOfList(list: List[Int]): Long =
-    list.sum
+    getAllPrimesBelow(n).sum
 
   def getAllPrimesBelow(n: Int): List[Int] =
     val sieve = Array.fill(n)(true)
@@ -36,14 +33,7 @@ object P10_SummationOfPrimes:
         for j <- i * i until n by i do
           sieve(j) = false
 
-    val primes = (2 until sieve.length).foldLeft(List.empty[Int])((acc, i) =>
-      if sieve(i) && i < n then
-        i :: acc
-      else
-        acc
-    ).reverse
-
-    primes
+    sieve.zipWithIndex.filter(_._1).map(_._2).toList
 end P10_SummationOfPrimes
 
 

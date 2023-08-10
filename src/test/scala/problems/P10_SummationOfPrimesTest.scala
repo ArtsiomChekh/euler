@@ -27,9 +27,6 @@ class P10_SummationOfPrimesTest extends FunSuite:
   test("getAllPrimesBelow"):
     assertEquals(getAllPrimesBelow(20), List(2, 3, 5, 7, 11, 13, 17, 19))
 
-  test("sumOfList"):
-    assertEquals(sumOfList(List(2, 3, 4)), 9L)
-
   test("summationOfPrimesBelow 5, 10, 100"):
     assertEquals(summationOfPrimesBelow(5), 5L)
     assertEquals(summationOfPrimesBelow(10), 17L)
