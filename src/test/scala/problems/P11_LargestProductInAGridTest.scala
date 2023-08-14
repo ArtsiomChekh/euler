@@ -25,8 +25,8 @@ class P11_LargestProductInAGridTest extends FunSuite:
     assertEquals(descendingDiagonal(testGrid, 3, 4), 300)
 
   test("ascendingDiagonal for testGrid"):
-    assertEquals(ascendingDiagonal(testGrid, 2, 2), 180)
-    assertEquals(ascendingDiagonal(testGrid, 2, 2), 180)
+    assertEquals(ascendingDiagonal(testGrid, 3, 2), 180)
+    assertEquals(ascendingDiagonal(testGrid, 3, 3), 240)
 
   test("vertical for testGrid"):
     assertEquals(horizontal(testGrid, 2, 3), 240)
@@ -43,7 +43,7 @@ class P11_LargestProductInAGridTest extends FunSuite:
     assertEquals(descendingDiagonal(matrixGrid, 6, 8), 1788696)
 
   test("maxProduct for matrixGrid"):
-    assertEquals(maxProduct(matrixGrid), 51267216)
+    assertEquals(maxProduct(matrixGrid), 70600674)
 
 
 
