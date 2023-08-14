@@ -46,4 +46,3 @@ object P11_LargestProductInAGrid:
       if new_max > max_found then
         max_found = new_max
     max_found
-
