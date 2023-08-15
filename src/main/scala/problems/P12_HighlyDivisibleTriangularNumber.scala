@@ -19,10 +19,7 @@ object P12_HighlyDivisibleTriangularNumber:
       triangleNumber
 
   def generatorTriangleNumber(n: Int): Int =
-    var currentTriangle = 0
-    for (count <- 1 to n)
-      currentTriangle = currentTriangle + count
-    currentTriangle
+    (n * (n + 1)) / 2
 
   def findFactorsOfNumber(n: Int): List[Int] =
     var factors: List[Int] = List()

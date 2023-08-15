@@ -1,18 +1,31 @@
 package problems
 
 import munit.FunSuite
-import problems.P13_LargeSum.firstTenDigits
 
 class P13_LargeSumTest extends FunSuite:
 
   val filePath = "src/main/resources/db/P13"
-  val fileContent: String = readFile(filePath)
-  val testString: String = "12345"
+  val stringNumber: String = readFile(filePath)
+  val numbers: Array[String] = stringNumber.split("\n")
+
+  val numbersTest: Array[String] = Array(
+    "123456789123456789123456789232",
+    "123456789123456789123456789213",
+    "123456789123456789123456789232")
 
   import P13_LargeSum.*
 
-  test("firstTenDigits dataForTest 1"):
-    assertEquals(firstTenDigits(testString), 123)
+  test("firstNDigits for numbersTest (1 digits)"):
+    assertEquals(firstNDigits(numbersTest, 1), 3L)
+
+  test("firstNDigits for numbersTest (3 digits)"):
+    assertEquals(firstNDigits(numbersTest, 3), 370L)
+
+  test("firstNDigits for numbersTest (10 digits)"):
+    assertEquals(firstNDigits(numbersTest, 10), 3703703673L)
+
+  test("firstNDigits for numbers[100][50] (10 digits)"):
+    assertEquals(firstNDigits(numbers, 10), 5537376230L)
 
 
 
