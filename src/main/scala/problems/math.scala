@@ -24,3 +24,13 @@ def factorial(n: Int): Long =
       loop(acc * k, k - 1)
   loop(1, n)
 
+def bigFactorial(n: Int): BigInt =
+  @tailrec
+  def loop(acc: BigInt, k: Int): BigInt =
+    if k <= 0 then
+      acc
+    else
+      loop(acc * k, k - 1)
+  loop(BigInt(1), n)
+
+

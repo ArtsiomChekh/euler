@@ -28,3 +28,11 @@ class MathTest extends munit.FunSuite:
     assertEquals(factorial(4), 24L)
     assertEquals(factorial(10), 3628800L)
     assertEquals(factorial(20), 2432902008176640000L)
+
+  test("bigFactorial"):
+    assertEquals(bigFactorial(0), BigInt(1))
+    assertEquals(bigFactorial(10), BigInt(3628800))
+    assertEquals(bigFactorial(20), BigInt("2432902008176640000"))
+    assertEquals(bigFactorial(40), BigInt("815915283247897734345611269596115894272000000000"))
+
+
