@@ -14,3 +14,13 @@ def isPrime(n: Int): Boolean =
     n == 2 || i * i > n || n % i != 0 && loop(i + 1)
 
   loop(2)
+
+def factorial(n: Int): Int =
+  @tailrec
+  def loop(acc: Int, k: Int): Int =
+    if k <= 0 then
+      acc
+    else
+      loop(acc * k, k - 1)
+  loop(1, n)
+
