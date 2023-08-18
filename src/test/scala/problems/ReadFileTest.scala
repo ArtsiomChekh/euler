@@ -4,7 +4,7 @@ import munit.FunSuite
 
 class ReadFileTest extends FunSuite:
 
-  val filePath = "src/dataForTest/resources/db/dataForTest"
+  val filePath = "src/test/resources/db/dataForTest"
 
   test("readFile"):
     assertEquals(readFile(filePath), "12345")
