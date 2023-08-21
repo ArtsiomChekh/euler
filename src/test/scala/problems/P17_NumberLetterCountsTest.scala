@@ -16,8 +16,8 @@ class P17_NumberLetterCountsTest extends FunSuite:
     assertEquals(numberLetterCounts(5), 19)
 
   test("numberLetterCounts to 100"):
-    assertEquals(numberLetterCounts(100), 868)
+    assertEquals(numberLetterCounts(100), 864)
 
-//  test("numberLetterCounts to 1000"):
-//    assertEquals(numberLetterCounts(1000), 21168)
+  test("numberLetterCounts to 1000"):
+    assertEquals(numberLetterCounts(1000), 21124)
 

@@ -5,7 +5,7 @@ package problems
  * https://projecteuler.net/problem=17
  */
 object P17_NumberLetterCounts:
-  private val units = Map("units" -> Array("zero", "one", "two", "three", "four", "five", "six", "seven",
+  private val units = Map("units" -> Array("", "one", "two", "three", "four", "five", "six", "seven",
     "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
     "seventeen", "eighteen", "nineteen"))
   private val tens = Map("tens" -> Array("", "ten", "twenty", "thirty", "forty", "fifty", "sixty",
@@ -36,6 +36,8 @@ object P17_NumberLetterCounts:
           stringNumb += units("units")(currentNumb)
 
     stringNumb.length
+end P17_NumberLetterCounts
+
 
 
 
