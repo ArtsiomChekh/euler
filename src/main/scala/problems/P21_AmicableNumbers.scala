@@ -6,15 +6,23 @@ package problems
  */
 object P21_AmicableNumbers:
   def sumOfAmicableNumbers(n: Int): Int =
-    504
+    var sum = 0
+    for a <- 0 until n do
+      for b <- a until n do
+        if isAmicable(a, b) then
+          sum += a + b
+    sum
+
+  def isAmicable(a: Int, b: Int): Boolean =
+    sumOfNumberDivisorsBelow(a) == b &&
+      sumOfNumberDivisorsBelow(b) == a &&
+      a != b
 
   def sumOfNumberDivisorsBelow(n: Int): Int =
     (1 until n).foldLeft(0)((acc, num) =>
       if (n % num == 0) acc + num else acc)
 
-  def isAmicable(a: Int, b: Int): Boolean =
-    sumOfNumberDivisorsBelow(a) == b &&
-      sumOfNumberDivisorsBelow(b) == a
+
 
 
 

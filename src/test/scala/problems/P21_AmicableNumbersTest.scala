@@ -6,9 +6,6 @@ class P21_AmicableNumbersTest extends FunSuite:
 
   import P21_AmicableNumbers._
 
-  test("sumOfAmicableNumbers"):
-    assertEquals(sumOfAmicableNumbers(300), 504)
-
   test("sumOfNumberDivisorsBelow 4"):
     assertEquals(sumOfNumberDivisorsBelow(4), 3)
 
@@ -26,4 +23,13 @@ class P21_AmicableNumbersTest extends FunSuite:
 
   test("isAmicable 1000, 2000 (false)"):
     assert(!isAmicable(1000, 2000))
+
+  test("sumOfAmicableNumbers under 300"):
+    assertEquals(sumOfAmicableNumbers(300), 504)
+
+  test("sumOfAmicableNumbers under 1500"):
+    assertEquals(sumOfAmicableNumbers(1500), 2898)
+
+  test("sumOfAmicableNumbers under 10000"):
+    assertEquals(sumOfAmicableNumbers(10000), 2898)
 
