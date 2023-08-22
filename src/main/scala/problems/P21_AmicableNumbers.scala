@@ -1,5 +1,9 @@
 package problems
 
+/*
+ * Amicable Numbers
+ * https://projecteuler.net/problem=21
+ */
 object P21_AmicableNumbers:
   def sumOfAmicableNumbers(n: Int): Int =
     504
