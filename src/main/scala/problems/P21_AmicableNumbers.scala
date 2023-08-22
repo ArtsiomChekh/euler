@@ -12,6 +12,9 @@ object P21_AmicableNumbers:
     (1 until n).foldLeft(0)((acc, num) =>
       if (n % num == 0) acc + num else acc)
 
+  def isAmicable(a: Int, b: Int): Boolean =
+    sumOfNumberDivisorsBelow(a) == b &&
+      sumOfNumberDivisorsBelow(b) == a
 
 
 

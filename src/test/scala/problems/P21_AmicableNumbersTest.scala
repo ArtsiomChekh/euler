@@ -18,3 +18,12 @@ class P21_AmicableNumbersTest extends FunSuite:
   test("sumOfNumberDivisorsBelow 284"):
     assertEquals(sumOfNumberDivisorsBelow(284), 220)
 
+  test("isAmicable 220, 284"):
+    assert(isAmicable(220, 284))
+
+  test("isAmicable 1184, 1210"):
+    assert(isAmicable(1184, 1210))
+
+  test("isAmicable 1000, 2000 (false)"):
+    assert(!isAmicable(1000, 2000))
+
