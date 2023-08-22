@@ -9,12 +9,12 @@ class P21_AmicableNumbersTest extends FunSuite:
   test("sumOfAmicableNumbers"):
     assertEquals(sumOfAmicableNumbers(300), 504)
 
-  test("numberDivisorsBelow 4"):
-    assertEquals(numberDivisorsBelow(4), List(1, 2))
+  test("sumOfNumberDivisorsBelow 4"):
+    assertEquals(sumOfNumberDivisorsBelow(4), 3)
 
-  test("numberDivisorsBelow 220"):
-    assertEquals(numberDivisorsBelow(220), List(1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110))
+  test("sumOfNumberDivisorsBelow 220"):
+    assertEquals(sumOfNumberDivisorsBelow(220), 284)
 
-  test("numberDivisorsBelow 284"):
-    assertEquals(numberDivisorsBelow(284), List(1, 2, 4, 71, 142))
+  test("sumOfNumberDivisorsBelow 284"):
+    assertEquals(sumOfNumberDivisorsBelow(284), 220)
 
