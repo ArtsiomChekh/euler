@@ -10,6 +10,8 @@ object P22_NamesScores:
 
   def nameCharSum(name: String): Int =
     name.toCharArray.foldLeft(0)((acc, c) => acc + (c - ('A' - 1)))
+end P22_NamesScores
+
 
 
 
