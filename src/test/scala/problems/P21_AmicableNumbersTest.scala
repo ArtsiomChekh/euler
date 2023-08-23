@@ -31,5 +31,5 @@ class P21_AmicableNumbersTest extends FunSuite:
     assertEquals(sumOfAmicableNumbers(1500), 2898)
 
   test("sumOfAmicableNumbers under 10000"):
-    assertEquals(sumOfAmicableNumbers(10000), 2898)
+    assertEquals(sumOfAmicableNumbers(10000), 31626)
 

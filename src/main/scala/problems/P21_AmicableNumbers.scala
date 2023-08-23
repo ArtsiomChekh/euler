@@ -8,9 +8,9 @@ object P21_AmicableNumbers:
   def sumOfAmicableNumbers(n: Int): Int =
     var sum = 0
     for a <- 0 until n do
-      for b <- a until n do
-        if isAmicable(a, b) then
-          sum += a + b
+      val b = sumOfNumberDivisorsBelow(a)
+      if a < b && isAmicable(a, b) then
+        sum += a + b
     sum
 
   def isAmicable(a: Int, b: Int): Boolean =
