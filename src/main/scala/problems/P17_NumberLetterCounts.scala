@@ -14,7 +14,6 @@ object P17_NumberLetterCounts:
   def numberLetterCounts(n: Int): Int =
     var stringNumb = ""
     for i <- 1 to n do
-      println(stringNumb)
       var currentNumb = i
 
       if currentNumb / 1000 > 0 then
