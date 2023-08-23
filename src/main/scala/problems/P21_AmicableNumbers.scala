@@ -21,6 +21,9 @@ object P21_AmicableNumbers:
   def sumOfNumberDivisorsBelow(n: Int): Int =
     (1 until n).foldLeft(0)((acc, num) =>
       if (n % num == 0) acc + num else acc)
+end P21_AmicableNumbers
+
+    
 
 
 
