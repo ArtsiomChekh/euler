@@ -12,5 +12,15 @@ class P22_NamesScoresTest extends FunSuite:
   source.close
 
   import P22_NamesScores._
+
   test("sumOfNames"):
-    assert(sumOfNames())
+    assert(sumOfNamesScore())
+
+  test("nameCharSum ABC"):
+    assertEquals(nameCharSum("ABC"), 1+2+3)
+
+  test("nameCharSum MARY"):
+    assertEquals(nameCharSum("MARY"), 57)
+
+  test("nameCharSum COLIN"):
+    assertEquals(nameCharSum("COLIN"), 53)
