@@ -35,4 +35,9 @@ class MathTest extends munit.FunSuite:
     assertEquals(bigFactorial(20), BigInt("2432902008176640000"))
     assertEquals(bigFactorial(40), BigInt("815915283247897734345611269596115894272000000000"))
 
-
+  test("sumOfNumberDivisorsBelow"):
+    assertEquals(sumOfNumberDivisorsBelow(4), 3)
+    assertEquals(sumOfNumberDivisorsBelow(28), 28)
+    assertEquals(sumOfNumberDivisorsBelow(12), 16)
+    assertEquals(sumOfNumberDivisorsBelow(220), 284)
+    assertEquals(sumOfNumberDivisorsBelow(284), 220)

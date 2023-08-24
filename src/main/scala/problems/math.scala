@@ -33,4 +33,6 @@ def bigFactorial(n: Int): BigInt =
       loop(acc * k, k - 1)
   loop(BigInt(1), n)
 
-
+def sumOfNumberDivisorsBelow(n: Int): Int =
+  (1 until n).foldLeft(0)((acc, num) =>
+    if (n % num == 0) acc + num else acc)
