@@ -22,12 +22,12 @@ class MathTest extends munit.FunSuite:
     assert(isPrime(7211537))
 
   test("factorial"):
-    assertEquals(factorial(0), 1L)
-    assertEquals(factorial(1), 1L)
-    assertEquals(factorial(2), 2L)
-    assertEquals(factorial(4), 24L)
-    assertEquals(factorial(10), 3628800L)
-    assertEquals(factorial(20), 2432902008176640000L)
+    assertEquals(factorialLong(0), 1L)
+    assertEquals(factorialLong(1), 1L)
+    assertEquals(factorialLong(2), 2L)
+    assertEquals(factorialLong(4), 24L)
+    assertEquals(factorialLong(10), 3628800L)
+    assertEquals(factorialLong(20), 2432902008176640000L)
 
   test("bigFactorial"):
     assertEquals(bigFactorial(0), BigInt(1))

@@ -15,7 +15,16 @@ def isPrime(n: Int): Boolean =
 
   loop(2)
 
-def factorial(n: Int): Long =
+def factorial(n: Int): Int =
+  @tailrec
+  def loop(acc: Int, k: Int): Int =
+    if k <= 0 then
+      acc
+    else
+      loop(acc * k, k - 1)
+  loop(1, n)
+  
+def factorialLong(n: Int): Long =
   @tailrec
   def loop(acc: Long, k: Int): Long =
     if k <= 0 then
