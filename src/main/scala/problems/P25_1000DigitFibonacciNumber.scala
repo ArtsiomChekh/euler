@@ -1,7 +1,5 @@
 package problems
 
-import java.util.stream.Collectors
-
 /*
  * 1000-digit Fibonacci Number
  * https://projecteuler.net/problem=25
