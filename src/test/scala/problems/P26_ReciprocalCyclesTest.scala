@@ -3,7 +3,8 @@ package problems
 import munit.FunSuite
 
 class P26_ReciprocalCyclesTest extends FunSuite:
-  import  P26_ReciprocalCycles._
+
+  import P26_ReciprocalCycles._
 
   test("test 1/2 -> 0.5"):
     assertEquals(cycleLength(2), 0)

@@ -7,6 +7,16 @@ import scala.annotation.tailrec
  * https://projecteuler.net/problem=26
  */
 object P26_ReciprocalCycles:
+  def denominatorWithLongestRecurringCycle(limit: Int): Int =
+    var longest = 0
+    var valueD = 0
+    for d <- 1 until limit do
+      val temp = cycleLength(d)
+      if longest < temp then
+        longest = temp
+        valueD = d
+    valueD
+
   def cycleLength(n: Int): Int =
     var num = n
     while num % 2 == 0 do
@@ -21,16 +31,8 @@ object P26_ReciprocalCycles:
       k = 10 * k % num
       length += 1
     length
+end P26_ReciprocalCycles
 
-  def denominatorWithLongestRecurringCycle(limit: Int): Int =
-    var longest = 0
-    var valueD = 0
-    for d <- 1 until limit do
-      val temp = cycleLength(d)
-      if longest < temp then
-        longest = temp
-        valueD = d
-    valueD
 
 
 
