@@ -7,19 +7,33 @@ import scala.annotation.tailrec
  * https://projecteuler.net/problem=26
  */
 object P26_ReciprocalCycles:
-  def cycleLength(denom: Int): Int =
-    var digit: Option[Int] = None
-    var decimals: List[Int] = Nil
-    var num = 1
+  def cycleLength(n: Int): Int =
+    var num = n
+    while num % 2 == 0 do
+      num /= 2
+    while num % 5 == 0 do
+      num /= 5
+    if num == 1 then
+      return 0
+    var k = 10 % num
+    var length = 1
+    while k != 1 do
+      k = 10 * k % num
+      length += 1
+    length
 
-    while !decimals.contains(digit.getOrElse(-1)) do
-      decimals = decimals :+ digit.getOrElse(-1)
-      digit = Some(num * 10 / denom)
-      val remainder = num * 10 - digit.getOrElse(0) * denom
-      num = remainder
+  def denominatorWithLongestRecurringCycle(limit: Int): Int =
+    var longest = 0
+    var valueD = 0
+    for d <- 1 until limit do
+      val temp = cycleLength(d)
+      if longest < temp then
+        longest = temp
+        valueD = d
+    valueD
 
-    decimals.length - decimals.indexOf(digit.getOrElse(-1))
 
-  cycleLength(3)
+
+
 
 
