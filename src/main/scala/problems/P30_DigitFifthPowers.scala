@@ -18,12 +18,9 @@ object P30_DigitFifthPowers:
     loop(0, value)
 
   def digitNthPowers(end: Int, power: Int): Int =
-    var solution = 0
-    for numb <- 2 to end do
+    (2 to end).foldLeft(0)((acc, numb) =>
       val temp = sumPowerDigits(numb, power)
-      if temp == numb then
-        solution += numb
-    solution
+      if (temp == numb) acc + numb else acc)
 end P30_DigitFifthPowers
 
 
