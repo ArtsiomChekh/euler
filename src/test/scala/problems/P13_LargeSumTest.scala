@@ -16,16 +16,20 @@ class P13_LargeSumTest extends FunSuite:
   import P13_LargeSum.*
 
   test("firstNDigits for numbersTest (1 digits)"):
-    assertEquals(firstNDigits(numbersTest, 1), 3L)
+    assertEquals(firstNDigits(numbersTest, 1), "3")
 
   test("firstNDigits for numbersTest (3 digits)"):
-    assertEquals(firstNDigits(numbersTest, 3), 370L)
+    assertEquals(firstNDigits(numbersTest, 3), "370")
 
   test("firstNDigits for numbersTest (10 digits)"):
-    assertEquals(firstNDigits(numbersTest, 10), 3703703673L)
+    assertEquals(firstNDigits(numbersTest, 10), "3703703673")
 
   test("firstNDigits for numbers[100][50] (10 digits)"):
-    assertEquals(firstNDigits(numbers, 10), 5537376230L)
+    assertEquals(firstNDigits(numbers, 10), "5537376230")
+
+  test("sumBigNumbers for numbersTest"):
+    assertEquals(sumBigNumbers(numbersTest), BigInt("370370367370370367370370367677"))
+
 
 
 
