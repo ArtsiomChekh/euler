@@ -5,44 +5,38 @@ package problems
  * https://projecteuler.net/problem=11
  */
 object P11_LargestProductInAGrid:
-  def descendingDiagonal(grid: Array[Array[Int]], r: Int, c: Int): Int = {
-    val cell1 = grid(r)(c)
-    val cell2 = if (r + 1 < grid.length && c + 1 < grid(r + 1).length) grid(r + 1)(c + 1) else 0
-    val cell3 = if (r + 2 < grid.length && c + 2 < grid(r + 2).length) grid(r + 2)(c + 2) else 0
-    val cell4 = if (r + 3 < grid.length && c + 3 < grid(r + 3).length) grid(r + 3)(c + 3) else 0
-    cell1 * cell2 * cell3 * cell4
-  }
+  def descendingDiagonal(grid: Array[Array[Int]], r: Int, c: Int, n: Int): Int =
+    (0 until n).foldLeft(1)((product, i) =>
+      val cell = if (r + i < grid.length && c + i < grid(r + i).length) grid(r + i)(c + i) else 0
+      product * cell
+    )
 
-  def ascendingDiagonal(grid: Array[Array[Int]], r: Int, c: Int): Int = {
-    val cell1 = grid(r)(c)
-    val cell2 = if (r - 1 >= 0 && c + 1 < grid(r - 1).length) grid(r - 1)(c + 1) else 0
-    val cell3 = if (r - 2 >= 0 && c + 2 < grid(r - 2).length) grid(r - 2)(c + 2) else 0
-    val cell4 = if (r - 3 >= 0 && c + 3 < grid(r - 3).length) grid(r - 3)(c + 3) else 0
-    cell1 * cell2 * cell3 * cell4
-  }
+  def ascendingDiagonal(grid: Array[Array[Int]], r: Int, c: Int, n: Int): Int =
+    (0 until n).foldLeft(1)((product, i) =>
+      val cell = if (r - i >= 0 && c + i < grid(r - i).length) grid(r - i)(c + i) else 0
+      product * cell
+    )
 
-  def vertical(grid: Array[Array[Int]], r: Int, c: Int): Int = {
-    val cell1 = grid(r)(c)
-    val cell2 = grid(r + 1)(c)
-    val cell3 = grid(r + 2)(c)
-    val cell4 = grid(r + 3)(c)
-    cell1 * cell2 * cell3 * cell4
-  }
+  def vertical(grid: Array[Array[Int]], r: Int, c: Int, n: Int): Int =
+    (0 until n).foldLeft(1)((product, i) =>
+      val cell = grid(r + i)(c)
+      product * cell
+    )
 
-  def horizontal(grid: Array[Array[Int]], r: Int, c: Int): Int = {
-    val cell1 = grid(r)(c)
-    val cell2 = grid(r)(c + 1)
-    val cell3 = grid(r)(c + 2)
-    val cell4 = grid(r)(c + 3)
-    cell1 * cell2 * cell3 * cell4
-  }
+  def horizontal(grid: Array[Array[Int]], r: Int, c: Int, n: Int): Int =
+    (0 until n).foldLeft(1)((product, i) =>
+      val cell = grid(r)(c + i)
+      product * cell
+    )
 
-  def maxProduct(grid: Array[Array[Int]]): Int =
+  def maxProduct(grid: Array[Array[Int]], n: Int): Int =
     var max_found = 0
-    for r <- 0 to grid.length - 4
-        c <- 0 to grid(0).length - 4 do
-      val new_max = List(horizontal(grid, r, c), vertical(grid, r, c),
-        descendingDiagonal(grid, r, c), ascendingDiagonal(grid, r, c)).max
+    for r <- 0 to grid.length - n
+        c <- 0 to grid(0).length - n do
+      val new_max = List(horizontal(grid, r, c, n), vertical(grid, r, c, n),
+        descendingDiagonal(grid, r, c, n), ascendingDiagonal(grid, r, c, n)).max
       if new_max > max_found then
         max_found = new_max
     max_found
+end P11_LargestProductInAGrid
+
