@@ -30,6 +30,11 @@ class P13_LargeSumTest extends FunSuite:
   test("sumBigNumbers for numbersTest"):
     assertEquals(sumBigNumbers(numbersTest), BigInt("370370367370370367370370367677"))
 
+  test("transform"):
+    assertEquals(transform(numbersTest),
+      Seq(BigInt("123456789123456789123456789232"), BigInt("123456789123456789123456789213"),
+      BigInt("123456789123456789123456789232")))
+
 
 
 

@@ -9,8 +9,10 @@ object P13_LargeSum:
     sumBigNumbers(numbers).toString.take(n)
 
   def sumBigNumbers(numbers: Array[String]): BigInt =
-    numbers.foldLeft(BigInt(0))((sum, num) =>
-      sum + BigInt(num))
+    transform(numbers).sum
+
+  def transform(numbers: Array[String]): Seq[BigInt] =
+    numbers.map(num => BigInt(num))
 end P13_LargeSum
 
 
