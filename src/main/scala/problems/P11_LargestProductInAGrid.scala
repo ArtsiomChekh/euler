@@ -7,14 +7,12 @@ package problems
 object P11_LargestProductInAGrid:
   def descendingDiagonal(grid: Array[Array[Int]], r: Int, c: Int, n: Int): Seq[Int] =
     (0 until n).foldLeft(Seq[Int]())((acc, i) =>
-      val cell = if (r + i < grid.length && c + i < grid(r + i).length) grid(r + i)(c + i) else 0
-      acc :+ cell
+      acc :+ (if (r + i < grid.length && c + i < grid(r + i).length) grid(r + i)(c + i) else 0)
     )
 
   def ascendingDiagonal(grid: Array[Array[Int]], r: Int, c: Int, n: Int): Seq[Int] =
     (0 until n).foldLeft(Seq[Int]())((acc, i) =>
-      val cell = if (r - i >= 0 && c + i < grid(r - i).length) grid(r - i)(c + i) else 0
-      acc :+ cell
+      acc :+ (if (r - i >= 0 && c + i < grid(r - i).length) grid(r - i)(c + i) else 0)
     )
 
   def vertical(grid: Array[Array[Int]], r: Int, c: Int, n: Int): Seq[Int] =
