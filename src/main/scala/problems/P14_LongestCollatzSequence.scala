@@ -27,6 +27,18 @@ object P14_LongestCollatzSequence:
         numberWithMaxLength = i
 
     numberWithMaxLength
+
+  def step(n: Int): Int =
+    if (n % 2 == 0) n / 2 else n * 3 + 1
+
+  def numberOfSteps(n: Int): Int =
+    @tailrec
+    def loop(count: Int, currentNumber: Int): Int =
+      if currentNumber == 1 then
+        count
+      else
+        loop(count + 1, step(currentNumber))
+    loop(1, n)
 end P14_LongestCollatzSequence
     
 
