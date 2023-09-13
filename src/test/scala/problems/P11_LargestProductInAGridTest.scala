@@ -21,26 +21,30 @@ class P11_LargestProductInAGridTest extends FunSuite:
       split(" ").map(_.toInt).grouped(20).toArray
 
   test("descendingDiagonal for testGrid"):
-    assertEquals(descendingDiagonal(testGrid, 2, 2, 4), 180)
-    assertEquals(descendingDiagonal(testGrid, 3, 4, 4), 300)
+    assertEquals(descendingDiagonal(testGrid, 2, 2, 4), Seq(3, 4, 5, 3))
+    assertEquals(descendingDiagonal(testGrid, 2, 2, 4).product, 180)
+    assertEquals(descendingDiagonal(testGrid, 3, 4, 4).product, 300)
 
   test("ascendingDiagonal for testGrid"):
-    assertEquals(ascendingDiagonal(testGrid, 3, 2, 4), 180)
-    assertEquals(ascendingDiagonal(testGrid, 3, 3, 4), 240)
+    assertEquals(ascendingDiagonal(testGrid, 3, 2, 4), Seq(3, 4, 5, 3))
+    assertEquals(ascendingDiagonal(testGrid, 3, 2, 4).product, 180)
+    assertEquals(ascendingDiagonal(testGrid, 3, 3, 4).product, 240)
 
   test("vertical for testGrid"):
-    assertEquals(vertical(testGrid, 1, 5, 4), 81)
-    assertEquals(vertical(testGrid, 0, 6, 4), 256)
+    assertEquals(vertical(testGrid, 1, 5, 4), Seq(3, 3, 3, 3))
+    assertEquals(vertical(testGrid, 1, 5, 4).product, 81)
+    assertEquals(vertical(testGrid, 0, 6, 4).product, 256)
 
   test("horizontal for testGrid"):
-    assertEquals(horizontal(testGrid, 2, 3, 4), 240)
-    assertEquals(horizontal(testGrid, 4, 2, 4), 180)
+    assertEquals(horizontal(testGrid, 2, 3, 4), Seq(4, 5, 3, 4))
+    assertEquals(horizontal(testGrid, 2, 3, 4).product, 240)
+    assertEquals(horizontal(testGrid, 4, 2, 4).product, 180)
 
   test("maxProduct for testGrid"):
     assertEquals(maxProduct(testGrid, 4), 625)
 
   test("descendingDiagonal for matrixGrid"):
-    assertEquals(descendingDiagonal(matrixGrid, 6, 8, 4), 1788696)
+    assertEquals(descendingDiagonal(matrixGrid, 6, 8, 4).product, 1788696)
 
   test("maxProduct for matrixGrid"):
     assertEquals(maxProduct(matrixGrid, 4), 70600674)
