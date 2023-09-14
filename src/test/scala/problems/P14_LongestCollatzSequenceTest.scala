@@ -6,10 +6,10 @@ class P14_LongestCollatzSequenceTest extends FunSuite:
 
   import P14_LongestCollatzSequence.*
 
-  test("size"):
+  test("numberWithLongestChain"):
     assertEquals(numberWithLongestChain(10), 9)
     assertEquals(numberWithLongestChain(100000), 77031)
-//    assertEquals(numberWithLongestChain(1000000), 77031)
+    assertEquals(numberWithLongestChain(1000000), 837799)
 
   test("step"):
     assertEquals(step(13), 40)

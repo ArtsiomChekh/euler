@@ -8,30 +8,27 @@ import scala.annotation.tailrec
  */
 object P14_LongestCollatzSequence:
   def numberWithLongestChain(n: Int): Int =
-    var number: Int = 1
-    var maxSteps: Int = 0
-    var currentSteps: Int = 0
-    for i <- 1 to n do
-      currentSteps = numberOfSteps(i)
-      if currentSteps > maxSteps then
-        maxSteps = currentSteps
-        number = i
-    number
+    val numbers = (1 until n).toList
+    val numberWithMaxSteps = numbers.maxBy(numberOfSteps)
+    numberWithMaxSteps
 
   def numberOfSteps(n: Int): Int =
     @tailrec
-    def loop(count: Int, currentNumber: Int): Int =
-      if currentNumber == 1 then
-        count
+    def loop(acc: Int, n: Int): Int =
+      if n == 1 then
+        acc
       else
-        loop(count + 1, step(currentNumber))
+        loop(acc + 1, step(n))
 
     loop(1, n)
 
   def step(n: Int): Int =
-    if (n % 2 == 0) n / 2 else n * 3 + 1
+    if (n % 2) == 0 then
+      n >>> 1
+    else
+      3 * n + 1
 end P14_LongestCollatzSequence
-    
+
 
 
 
