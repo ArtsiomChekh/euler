@@ -6,14 +6,4 @@ package problems
  */
 object P13_LargeSum:
   def firstNDigits(numbers: Array[String], n: Int): String =
-    sumBigNumbers(numbers).toString.take(n)
-
-  def sumBigNumbers(numbers: Array[String]): BigInt =
-    transform(numbers).sum
-
-  def transform(numbers: Array[String]): Seq[BigInt] =
-    numbers.map(num => BigInt(num))
-end P13_LargeSum
-
-
-
+    numbers.map(BigInt(_)).sum.toString.take(n)
