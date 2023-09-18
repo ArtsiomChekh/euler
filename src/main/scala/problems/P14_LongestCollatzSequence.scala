@@ -8,9 +8,7 @@ import scala.annotation.tailrec
  */
 object P14_LongestCollatzSequence:
   def numberWithLongestChain(n: Int): Int =
-    val numbers = (1 until n).toList
-    val numberWithMaxSteps = numbers.maxBy(numberOfSteps)
-    numberWithMaxSteps
+    (1 until n).maxBy(numberOfSteps)
 
   def numberOfSteps(n: Int): Int =
     @tailrec
