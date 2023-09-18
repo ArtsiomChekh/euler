@@ -14,7 +14,7 @@ object P14_LongestCollatzSequence:
 
   def numberOfSteps(n: Int): Int =
     @tailrec
-    def loop(acc: Int, n: Int): Int =
+    def loop(acc: Int, n: Long): Int =
       if n == 1 then
         acc
       else
@@ -22,9 +22,9 @@ object P14_LongestCollatzSequence:
 
     loop(1, n)
 
-  def step(n: Int): Int =
+  def step(n: Long): Long =
     if (n % 2) == 0 then
-      n >>> 1
+      n / 2
     else
       3 * n + 1
 end P14_LongestCollatzSequence

@@ -12,9 +12,9 @@ class P14_LongestCollatzSequenceTest extends FunSuite:
     assertEquals(numberWithLongestChain(1000000), 837799)
 
   test("step"):
-    assertEquals(step(13), 40)
-    assertEquals(step(20), 10)
-    assertEquals(step(2), 1)
+    assertEquals(step(13L), 40L)
+    assertEquals(step(20L), 10L)
+    assertEquals(step(2L), 1L)
 
   test("numberOfSteps"):
     assertEquals(numberOfSteps(1), 1)
