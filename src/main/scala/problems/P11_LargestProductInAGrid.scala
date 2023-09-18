@@ -21,9 +21,8 @@ object P11_LargestProductInAGrid:
     var listOfMax = Seq[Int]()
     for r <- 0 to grid.length - n
         c <- 0 to grid(0).length - n do
-      val newMax = List(horizontal(grid, r, c, n), vertical(grid, r, c, n),
+      listOfMax = listOfMax ++ List(horizontal(grid, r, c, n), vertical(grid, r, c, n),
         descendingDiagonal(grid, r, c, n), ascendingDiagonal(grid, r, c, n)
-      ).map(_.product).max
-      listOfMax = listOfMax :+ newMax
+      ).map(_.product)
     listOfMax.max
 end P11_LargestProductInAGrid
